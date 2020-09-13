@@ -160,10 +160,30 @@ secciones.intentasRescate.efectos = [];
 secciones.aLoBruto = {};
 secciones.length++;
 secciones.aLoBruto.textoPrincipal = '<h2>¡Era una embosacada!</h2><p class="letraCapitular">Pero ahora viene una malvada araña contra tí y te atrapa con su tela</p>';
-secciones.aLoBruto.opciones = [];
+secciones.aLoBruto.opciones = [
+  ["pilladoAranna", "la araña te va a hacer algo no muy bueno..."]
+];
 secciones.aLoBruto.test = [];
 secciones.aLoBruto.efectos = [];
 
+secciones.piedraAfilada = {};
+secciones.length++;
+secciones.piedraAfilada.textoPrincipal = '<h2>Ya tienes tu bonita piedra afilada, ¿ahora qué vas a hacer con ella?';
+secciones.piedraAfilada.opciones = [
+  ["cortarTelaraña", "Cortas la telaraña para hacerla caer"],
+  ["saltaConPiedra", "Saltas a la cuerda de la telaraña, pero bien pertrechado con tu piedra afilada"]
+];
+secciones.piedraAfilada.test = ["per",2,"noEncuentrasPiedra"];
+secciones.piedraAfilada.efectos = [];
+
+secciones.saltoAventura = {};
+secciones.length++;
+secciones.saltoAventura.textoPrincipal = 'Consigues saltar y todo eso, pero al llegar a la parte central de la telaraña te quedas pegado a ella... se entera que la víctima no era n niño sino un kobold... creo que te vas con la araña';
+secciones.saltoAventura.opciones = [
+   ["pilladoAranna", "la araña te va a hacer algo no muy bueno..."]
+];
+secciones.saltoAventura.test = ["des",3,"teLaPegas"];
+secciones.saltoAventura.efectos = [];
 
 secciones.quitaTres = {};
 secciones.length++;
