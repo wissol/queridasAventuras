@@ -60,7 +60,7 @@ secciones.buscasRaton.textoPrincipal = '<h2>Entras</h2><p>Consigues cazar el rat
 secciones.buscasRaton.opciones = [
   ["entrasEdificio", "Entra al edifico"]
 ];
-secciones.buscasRaton.test = ["des",1,"dificilRaton"];
+secciones.buscasRaton.test = ["des",3,"dificilRaton"];
 secciones.buscasRaton.efectos = [];
 
 secciones.dificilRaton = {};
@@ -156,6 +156,14 @@ secciones.intentasRescate.opciones = [
 ];
 secciones.intentasRescate.test = [];
 secciones.intentasRescate.efectos = [];
+
+secciones.aLoBruto = {};
+secciones.length++;
+secciones.aLoBruto.textoPrincipal = '<h2>¡Era una embosacada!</h2><p class="letraCapitular">Pero ahora viene una malvada araña contra tí y te atrapa con su tela</p>';
+secciones.aLoBruto.opciones = [];
+secciones.aLoBruto.test = [];
+secciones.aLoBruto.efectos = [];
+
 
 secciones.quitaTres = {};
 secciones.length++;
