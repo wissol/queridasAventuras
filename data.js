@@ -1,3 +1,4 @@
+//siguiente alDespachoIngeniero
 var secciones = {};
 
 secciones.length = 0;
