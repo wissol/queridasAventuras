@@ -144,6 +144,19 @@ secciones.tunelDch.opciones = [
 secciones.tunelDch.test = ["per",0,"pilladoAranna"];
 secciones.tunelDch.efectos = [];
 
+secciones.intentasRescate = {};
+secciones.length++;
+secciones.intentasRescate.textoPrincipal = '\
+<h2>Intentas el rescate</p>\
+<p class="letraCapitular">Una acción noble y aventurera, desde luego. La pregunta principal es, ¿cómo lo vas a hacer? Tienes la posibilidad de hacerlo a lo bruto, claro, o sea buscas los anclajes de la telaraña y los arrancas. Luego ya solo tienes que ir a porla persona que está dentro. Otra posibilidad es tratar de buscar una piedra afilada y usarla para cortar. Por último, pero solo si te atreves... verás hay una cuerda de telaraña colgando del techo, si saltas te puedes agarrar a ella y columpiarte hasta donde está la víctima. No sé, en una novela de aventuras, seguro que sale bien.';
+secciones.intentasRescate.opciones = [
+  ["piedraAfilada", "Buscas una piedra afilada"],
+  ["aLoBruto", "Arrancas la teleraña a lo bruto"],
+  ["saltoAventura", "Agarras la cuerda de telaraña y te lanzas"]
+];
+secciones.intentasRescate.test = [];
+secciones.intentasRescate.efectos = [];
+
 secciones.quitaTres = {};
 secciones.length++;
 secciones.quitaTres.textoPrincipal = '\
