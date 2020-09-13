@@ -49,7 +49,6 @@ secciones.length++;
 secciones.ponesPan.textoPrincipal = "<h2>Te ha escupido el pan!</h2><p>La puerta escupe el pan con fuerza dándote en todo el ojo!";
 secciones.ponesPan.opciones = [
   ["buscasRaton", "Buscas un ratón"],
-  ["ponesPan", "Metes otro trocito de pan en la puerta"],
   ["llamasPuerta", "Simplemente llamas a la puerta"]
 ];
 secciones.ponesPan.test = [];
@@ -129,7 +128,8 @@ secciones.tunelIzq.textoPrincipal = '<h2>La máquina de hacer magia</h2>\
 secciones.tunelIzq.opciones = [
   ["teDescuelgas", "Te descuelgas"],
   ["tunelDch", "Vas al otro túnel"],
-  ["hablaCara", "Tratas de llamar la atención de una de las caras, para hablar con ella."]
+  ["hablaCara", "Tratas de llamar la atención de una de las caras, para hablar con ella."],
+  ["tunelIzq", "Tunel Izq"]
 ];
 secciones.tunelIzq.test = [];
 secciones.tunelIzq.efectos = [];
@@ -142,7 +142,7 @@ secciones.tunelDch.opciones = [
   ["buscasSalida", "Buscas una salida"],
   ["tunelIzq", "Vas al otro túnel"]
 ];
-secciones.tunelDch.test = [];
+secciones.tunelDch.test = ["per",0,"pilladoAranna"];
 secciones.tunelDch.efectos = [];
 
 secciones.quitaTres = {};

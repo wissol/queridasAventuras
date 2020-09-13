@@ -19,23 +19,6 @@ function ejecutarEfecto(efecto){
   }
 }
 
-function shuffle(anArray){
-  if(anArray.length < 2){
-    return anArray;
-  } else {    
-      let newArray = [];
-      while(anArray.length > 0){
-      let index = Math.floor(Math.random() * anArray.length );
-      let head = anArray[index];
-      newArray.push(head);
-      delete anArray[index];
-      anArray = anArray.filter(isNull);
-    }
-    return newArray;
-  }
-}
-
-
 function dice(faces=6, rolls=1) {
   if(rolls>0){
       return Math.floor(Math.random() * (faces-1) + 1)  + dice(faces, rolls-1); 
@@ -97,8 +80,7 @@ function actualiza_html_seccion(seccion){
     htmlopciones = "<p id='elFin'>El Fin</p>";
   } else {
     htmlopciones = "<h2>Tus opciones</h2>";
-    let a = shuffle(seccion.opciones);
-    a.forEach(element => 
+    seccion.opciones.forEach(element => 
       htmlopciones += `<li><a href="${element[0]}" class="opcion">${element[1]}</a></li>`);
   }  
   $( "#opciones" ).html( htmlopciones ) ;
