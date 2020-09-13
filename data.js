@@ -147,13 +147,24 @@ secciones.tunelIzq.efectos = [];
 
 secciones.teDescuelgas = {};
 secciones.length++;
-secciones.teDescuelgas.textoPrincipal = '<h2>Consigues descolgarte limpiamente</h2><p>Los fantasmas azules, como siempre, no se fijan en ti y bla bla. Vemos un despacho de ingeniero, en un extremo de la puerta, aire años 70, está abierto, hay unos planos, la mayoría de la famosa máquina y no son muy útiles';
+secciones.teDescuelgas.textoPrincipal = '<h2>Después del descuelgue</h2><p>Los fantasmas azules, como siempre, no se fijan en ti y bla bla. Vemos un despacho de ingeniero, en un extremo de la puerta, aire años 70, está abierto, hay unos planos, la mayoría de la famosa máquina y no son muy útiles';
 secciones.teDescuelgas.opciones = [
   ["alDespachoIngeniero", "Si quieres colarte en el despacho del ingeniero..."],
   ["sabotajeMagia", "Intentas sabotear la máquina de magia"]
 ];
 secciones.teDescuelgas.test = ["des", 2, "descuelgueAccidentado"];
 secciones.teDescuelgas.efectos = [];
+
+secciones.descuelgueAccidentado = {};
+secciones.length++;
+secciones.descuelgueAccidentado.textoPrincipal = 'El intento sale mal y te pegas un tortazo. Menos mal que sigues vivo - Consigues descolgarte limpiamente</h2><p>Los fantasmas azules, como siempre, no se fijan en ti y bla bla. Vemos un despacho de ingeniero, en un extremo de la puerta, aire años 70, está abierto, hay unos planos, la mayoría de la famosa máquina y no son muy útiles';
+secciones.descuelgueAccidentado.opciones = [
+  ["alDespachoIngeniero", "Si quieres colarte en el despacho del ingeniero..."],
+  ["sabotajeMagia", "Intentas sabotear la máquina de magia"]
+];
+secciones.descuelgueAccidentado.test = [];
+secciones.descuelgueAccidentado.efectos = ["herido"];
+secciones.descuelgueAccidentado.seccionSiMuere = ["muereCaidaDescuelgue"];
 
 secciones.tunelDch = {};
 secciones.length++;
@@ -315,6 +326,12 @@ secciones.muereGoryAleluya.opciones = [];
 secciones.muereGoryAleluya.test = [];
 secciones.muereGoryAleluya.efectos = [];
 
+secciones.muereCaidaDescuelgue = {};
+secciones.length++;
+secciones.muereCaidaDescuelgue.textoPrincipal = 'Te has roto una mano y un pie y no te puedes levantar. Los fantasmas azules no te prestan atención, llores, grites, insultes o supliques. Una hora después una maga viene y te salva... para mantenerte encerrado, usado como batería mágica';
+secciones.muereCaidaDescuelgue.opciones = [];
+secciones.muereCaidaDescuelgue.test = [];
+secciones.muereCaidaDescuelgue.efectos = [];
 
 secciones._404 = {};
 secciones._404.textoPrincipal = "<h2>Esto es un error</h2><p>Aquí debería haber una sección, pero ha salido un bug</p>";
