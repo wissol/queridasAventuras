@@ -185,6 +185,16 @@ secciones.saltoAventura.opciones = [
 secciones.saltoAventura.test = ["des",3,"teLaPegas"];
 secciones.saltoAventura.efectos = [];
 
+secciones.teLaPegas = {};
+secciones.length++;
+secciones.teLaPegas.textoPrincipal = 'gory, gory, aleluya... y si sobreviviste viene la araña';
+secciones.teLaPegas.opciones = [
+   ["pilladoAranna", "la araña te va a hacer algo no muy bueno..."]
+];
+secciones.teLaPegas.test = [];
+secciones.teLaPegas.efectos = ["herido"];
+secciones.teLaPegas.seccionSiMuere = ["muereGoryAleluya"];
+
 secciones.quitaTres = {};
 secciones.length++;
 secciones.quitaTres.textoPrincipal = '\
@@ -265,6 +275,13 @@ secciones.muere1.textoPrincipal = "<h2>Has muerto de frío y hambre, qué pena</
 secciones.muere1.opciones = [];
 secciones.muere1.test = [];
 secciones.muere1.efectos = [];
+
+secciones.muereGoryAleluya = {};
+secciones.length++;
+secciones.muereGoryAleluya.textoPrincipal = "<h2>Has muerto por el castañazo que te pegaste al caer de la telaraña</h2>";
+secciones.muereGoryAleluya.opciones = [];
+secciones.muereGoryAleluya.test = [];
+secciones.muereGoryAleluya.efectos = [];
 
 
 secciones._404 = {};
