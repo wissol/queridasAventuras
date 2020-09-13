@@ -134,6 +134,17 @@ secciones.tunelIzq.opciones = [
 secciones.tunelIzq.test = [];
 secciones.tunelIzq.efectos = [];
 
+secciones.tunelDch = {};
+secciones.length++;
+secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
+secciones.tunelDch.opciones = [
+  ["intentasRescate", "Intentas rescatar a la víctima"],
+  ["buscasSalida", "Buscas una salida"],
+  ["tunelIzq", "Vas al otro túnel"]
+];
+secciones.tunelDch.test = [];
+secciones.tunelDch.efectos = [];
+
 secciones.quitaTres = {};
 secciones.length++;
 secciones.quitaTres.textoPrincipal = '\
