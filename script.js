@@ -21,10 +21,23 @@ function ejecutarEfecto(efecto){
 
 function dice(faces=6, rolls=1) {
   if(rolls>0){
-      return Math.floor(Math.random() * (faces-1) + 1)  + dice(faces, rolls-1); 
+      return Math.floor(Math.random() * faces) + 1 + dice(faces, rolls-1); 
   } else {
     return 0;
   } 
+}
+
+function baraja(inArray) { 
+  //shuffles an Array. This is meant for a small Array
+  outArray = [];
+  inArray.forEach(element=>{
+    if(dice(2,1)>1) {
+      outArray.push(element);
+    } else {
+      outArray.unshift(element);
+    }
+  });
+  return outArray;
 }
 
 function generaNombre(){
@@ -80,7 +93,7 @@ function actualiza_html_seccion(seccion){
     htmlopciones = "<p id='elFin'>El Fin</p>";
   } else {
     htmlopciones = "<h2>Tus opciones</h2>";
-    seccion.opciones.forEach(element => 
+    baraja(seccion.opciones).forEach(element => 
       htmlopciones += `<li><a href="${element[0]}" class="opcion">${element[1]}</a></li>`);
   }  
   $( "#opciones" ).html( htmlopciones ) ;

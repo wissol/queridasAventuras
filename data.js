@@ -128,8 +128,7 @@ secciones.tunelIzq.textoPrincipal = '<h2>La máquina de hacer magia</h2>\
 secciones.tunelIzq.opciones = [
   ["teDescuelgas", "Te descuelgas"],
   ["tunelDch", "Vas al otro túnel"],
-  ["hablaCara", "Tratas de llamar la atención de una de las caras, para hablar con ella."],
-  ["tunelIzq", "Tunel Izq"]
+  ["hablaCara", "Tratas de llamar la atención de una de las caras, para hablar con ella."]
 ];
 secciones.tunelIzq.test = [];
 secciones.tunelIzq.efectos = [];
