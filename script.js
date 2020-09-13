@@ -18,7 +18,7 @@ function ejecutarEfecto(efecto){
       }
       break;
     default:
-      console.log("efecto desconocido", efecto);
+      //console.log("efecto desconocido", efecto);
   }
 }
 
@@ -47,7 +47,7 @@ function generaNombre(){
   let nimi = "";
   let silabas = ["fix", "el", "bli", "mus", "ta", "ter", "ve", "ka", "uan", "nio", "vid", "a", "e", "i", "o", "u", "fe", "de", "ri",
                  "suo", "mi", "nel", "ca", "bal", "ni", "mi", "an", "to", "ku", "da", "guel", "ua", "es", "te", "ban", "co",
-                 "yo", "de", "ver", "lu", "lui", "ju", "na", "pe", "du", "ar", "te"];
+                 "yo", "de", "ver", "lu", "lui", "ju", "na", "pe", "du", "ar", "te", "bru", "no", "mat", "ti"];
   let numeroSilabas = (dice(faces=4, rolls=3)/3);
   for(let i=1;i<=numeroSilabas;i++){
     nimi += silabas[Math.floor(Math.random()*silabas.length)];

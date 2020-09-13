@@ -19,7 +19,7 @@ secciones.inicioAventura.opciones = [
   ["volverCasa", "Te alejas para volver a casa"]
 ]; // [[sección, texto del enlace],[...]]
 secciones.inicioAventura.test = []; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
-secciones.inicioAventura.efectos = ["grave"];
+secciones.inicioAventura.efectos = [];
 
 secciones.hablaFantasmaAzul = {};
 secciones.length++;
@@ -50,10 +50,21 @@ secciones.length++;
 secciones.ponesPan.textoPrincipal = "<h2>Te ha escupido el pan!</h2><p>La puerta escupe el pan con fuerza dándote en todo el ojo!";
 secciones.ponesPan.opciones = [
   ["buscasRaton", "Buscas un ratón"],
+  ["ponesPan", "Metes otro trocito de pan en la puerta"],
   ["llamasPuerta", "Simplemente llamas a la puerta"]
 ];
 secciones.ponesPan.test = [];
 secciones.ponesPan.efectos = ["magullado"];
+
+secciones.llamasPuerta = {};
+secciones.length++;
+secciones.llamasPuerta.textoPrincipal = "Una criatura mágica le dice. ¿No pensarías entrar en un lugar mágico solo llamando a la puerta? Y recibe un capón";
+secciones.llamasPuerta.opciones = [
+  ["buscasRaton", "Buscas un ratón"],
+  ["ponesPan", "Metes un trocito de pan en la puerta"],
+];
+secciones.llamasPuerta.test = [];
+secciones.llamasPuerta.efectos = ["magullado"];
 
 secciones.buscasRaton = {};
 secciones.length++;
@@ -134,6 +145,16 @@ secciones.tunelIzq.opciones = [
 secciones.tunelIzq.test = [];
 secciones.tunelIzq.efectos = [];
 
+secciones.teDescuelgas = {};
+secciones.length++;
+secciones.teDescuelgas.textoPrincipal = '<h2>Consigues descolgarte limpiamente</h2><p>Los fantasmas azules, como siempre, no se fijan en ti y bla bla. Vemos un despacho de ingeniero, en un extremo de la puerta, aire años 70, está abierto, hay unos planos, la mayoría de la famosa máquina y no son muy útiles';
+secciones.teDescuelgas.opciones = [
+  ["alDespachoIngeniero", "Si quieres colarte en el despacho del ingeniero..."],
+  ["sabotajeMagia", "Intentas sabotear la máquina de magia"]
+];
+secciones.teDescuelgas.test = ["des", 2, "descuelgueAccidentado"];
+secciones.teDescuelgas.efectos = [];
+
 secciones.tunelDch = {};
 secciones.length++;
 secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
@@ -176,6 +197,16 @@ secciones.piedraAfilada.opciones = [
 ];
 secciones.piedraAfilada.test = ["per",2,"noEncuentrasPiedra"];
 secciones.piedraAfilada.efectos = [];
+
+secciones.cortarTelaraña= {};
+secciones.length++;
+secciones.cortarTelaraña.textoPrincipal = 'Cortas la telaraña, el crío que resulta ser un goblin se cae y una araña va a por tí...';
+secciones.cortarTelaraña.opciones = [
+   ["huirAranna", "Sales corriendo, buscando una salida"],
+   ["lucharAranna", "Tampoco es tan grande y tu piedra de obsidiana corta tan bien como un cuchillo"]
+];
+secciones.cortarTelaraña.test = [];
+secciones.cortarTelaraña.efectos = [];
 
 secciones.saltoAventura = {};
 secciones.length++;
