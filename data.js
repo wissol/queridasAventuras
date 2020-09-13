@@ -123,9 +123,14 @@ secciones.usaPalanca2.test = [];
 
 secciones.tunelIzq = {};
 secciones.length++;
-secciones.tunelIzq.textoPrincipal = '<h2></h2>\
-<p class="letraCapitular">Te</p>'; //encuentra un mapa pero le falta un cacho o algo y realmente lleva a un sitio rápido pero peligroso
-secciones.tunelIzq.opciones = [];
+secciones.tunelIzq.textoPrincipal = '<h2>La máquina de hacer magia</h2>\
+<p class="letraCapitular">El túnel termina súbitamente en una abertura en una pared altísima. Te encuentras a seis metros del suelo, demasiado para descolgarte con seguridad aunque podrías intentarlo supongo. Porque, ¿qué otra cosa podrías hacer?</p>\
+<p>Aquí debajo hay una extraña máquina, como una caldera gigante, solo que unos fantasmas azules la están alimentando con piedras de luz naranja y emite como unas cabezas fantasmales que vuelan por todas partes, hablan, discuten entre ellas y luego desaparecen.</p>'; //encuentra un mapa pero le falta un cacho o algo y realmente lleva a un sitio rápido pero peligroso
+secciones.tunelIzq.opciones = [
+  ["teDescuelgas", "Te descuelgas"],
+  ["tunelDch", "Vas al otro túnel"],
+  ["hablaCara", "Tratas de llamar la atención de una de las caras, para hablar con ella."]
+];
 secciones.tunelIzq.test = [];
 secciones.tunelIzq.efectos = [];
 
