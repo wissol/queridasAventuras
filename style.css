@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@500&display=swap');
+
+html
+ {
+    /* Set your content font stack here: */
+    font-family: Grandstander,fantasy, serif;
+    font-size: 1.3rem;
+    background: #f1e9d2;
+    line-height: 1.33;
+}
+
+em {color:#B22222; font-weight: bold;}
+
+body { margin: 1vh auto; padding:1rem; max-width: 45em;}
+
+section {max-width: 35rem; margin: 0 auto;}
+
+
+h1{font-size: 3.0em; margin: 1vh auto; max-width: 40em; text-align: center;}
+
+p {margin: 1vh auto}
+
+p + p {text-indent: 2vw;}
+
+#elFin {
+  font-size: 2.0em;
+  text-align: center;
+}
+
+li a {text-decoration: none;}
+
+a:visited {color: blue;}
+
+.opcion {font-weight: 900;}
+
+.letraCapitular:first-letter
+{
+   float:left;
+   color:#B22222;
+   font-size:3.5rem;
+   padding: 0 .15vw 1vh 0;
+}
+
+img { max-width:100%; border: solid thick black; border-radius:80%; }
+
+button, input {
+  font-family: inherit;
+  font-size: 100%;
+  display:block;
+  margin: 1em auto;
+  width: 250px;
+  padding: 1vh 1vw;
+}
+
+#inputNombre {
+  border: solid thick #B22222;
+  border-radius: 5px;
+  text-align: center;
+  
+  background: inherit;
+}
+
+#inputBoton {
+  border: outset thick #B22222;
+  background: #B22222;
+  color: #f1e9d2;
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+}
+
+
+
+figure {float: left;}
+
