@@ -19,6 +19,7 @@ secciones.inicioAventura.opciones = [
   ["volverCasa", "Te alejas para volver a casa"]
 ]; // [[sección, texto del enlace],[...]]
 secciones.inicioAventura.test = []; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
+secciones.inicioAventura.efectos = ["grave"];
 
 secciones.hablaFantasmaAzul = {};
 secciones.length++;
@@ -192,7 +193,7 @@ secciones.teLaPegas.opciones = [
    ["pilladoAranna", "la araña te va a hacer algo no muy bueno..."]
 ];
 secciones.teLaPegas.test = [];
-secciones.teLaPegas.efectos = ["herido"];
+secciones.teLaPegas.efectos = ["grave"];
 secciones.teLaPegas.seccionSiMuere = ["muereGoryAleluya"];
 
 secciones.quitaTres = {};

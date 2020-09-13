@@ -3,10 +3,13 @@ function isNull(v){ return v !== null;}
 function ejecutarEfecto(efecto){
   switch (efecto) {
     case "herido":
-      localStorage["fue"] -= dice();
+      localStorage["fue"] -= dice(faces=3,rolls=2);
       break;
     case "magullado":
       localStorage["fue"]--;
+      break;
+    case "grave":
+      localStorage["fue"] -= dice(faces=3,rolls=3);
       break;
     case "curado":
       localStorage["fue"] += dice();
