@@ -177,6 +177,17 @@ secciones.alDespachoIngeniero.opciones = [
 secciones.alDespachoIngeniero.test = ["des",0,"pisasCuerda"];
 secciones.alDespachoIngeniero.efectos = [];
 
+secciones.tirasCuerda = {};
+secciones.length++;
+secciones.tirasCuerda.textoPrincipal = 'Al tirar de la cuerda te llega un respingo a la puerta que te tira al suelo. Suena la alarma. Y ahora aparece la linterna del ingeniero cobra vida, te pega un capón y te pregunta ¿Qué está usted intentando hacer aquí?';
+secciones.tirasCuerda.opciones = [
+  ["soloExplorando", "Solo estaba explorando, lo prometo"],
+  ["aprenderCosas", "He venido a aprender cosas"],
+  ["aRobar", "<q>He venido a robar, por supuesto</q>, declaras muy indignado"]
+];
+secciones.tirasCuerda.test = [];
+secciones.tirasCuerda.efectos = ["magullado"];
+
 secciones.pisasCuerda = {};
 secciones.length++;
 secciones.pisasCuerda.textoPrincipal = 'No has podido verla, . etc...Una discreta y fina cuerda que colgaba extremo a otro del marco de la puerta. Y ahora aparece la linterna del ingeniero cobra vida y te pregunta ¿Qué está usted intentando hacer aquí?';
@@ -185,8 +196,20 @@ secciones.pisasCuerda.opciones = [
   ["aprenderCosas", "He venido a aprender cosas"],
   ["aRobar", "<q>He venido a robar, por supuesto</q>, declaras muy indignado"]
 ];
-secciones.pisasCuerda.test = ["des",0,"pisasCuerda"];
+secciones.pisasCuerda.test = [];
 secciones.pisasCuerda.efectos = [];
+
+secciones.aRobar = {};
+secciones.length++;
+secciones.aRobar.textoPrincipal = '¿y por qué no me robas a mí también? te enseñaré el mapa del tesoro pero solo si prometes llevarme contigo.';
+secciones.aRobar.opciones = [
+  ["valeConmigo", "Vale, te vienes conmigo"],
+  ["noMeFio", "¿Por qué debería fiarme de ti?"]
+];
+secciones.aRobar.test = [];
+secciones.aRobar.efectos = []
+
+
 
 secciones.tunelDch = {};
 secciones.length++;
