@@ -167,6 +167,27 @@ secciones.descuelgueAccidentado.test = [];
 secciones.descuelgueAccidentado.efectos = ["herido"];
 secciones.descuelgueAccidentado.seccionSiMuere = ["muereCaidaDescuelgue"];
 
+secciones.alDespachoIngeniero = {};
+secciones.length++;
+secciones.alDespachoIngeniero.textoPrincipal = 'Casi no la ves, de no ser por tus ojos... etc...Una discreta y fina cuerda cuelga de un extremo a otro del marco de la puerta. ¡Qué curioso, ¿no?';
+secciones.alDespachoIngeniero.opciones = [
+  ["tirasCuerda", "Tiras de la cuerda, a ver qué pasa"],
+  ["pasaCuerda", "Pasas por encima de la cuerda"]
+];
+secciones.alDespachoIngeniero.test = ["des",0,"pisasCuerda"];
+secciones.alDespachoIngeniero.efectos = [];
+
+secciones.pisasCuerda = {};
+secciones.length++;
+secciones.pisasCuerda.textoPrincipal = 'No has podido verla, . etc...Una discreta y fina cuerda que colgaba extremo a otro del marco de la puerta. Y ahora aparece la linterna del ingeniero cobra vida y te pregunta ¿Qué está usted intentando hacer aquí?';
+secciones.pisasCuerda.opciones = [
+  ["soloExplorando", "Solo estaba explorando, lo prometo"],
+  ["aprenderCosas", "He venido a aprender cosas"],
+  ["aRobar", "<q>He venido a robar, por supuesto</q>, declaras muy indignado"]
+];
+secciones.pisasCuerda.test = ["des",0,"pisasCuerda"];
+secciones.pisasCuerda.efectos = [];
+
 secciones.tunelDch = {};
 secciones.length++;
 secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
