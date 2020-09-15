@@ -244,6 +244,15 @@ secciones.aLoMio.opciones = [];
 secciones.aLoMio.test = [];
 secciones.aLoMio.efectos = [];
 
+secciones.salesCorriendo = {};
+secciones.length++;
+secciones.salesCorriendo.textoPrincipal = 'pues al final vino un [alguien] a por ti... pero pudiste escapar a tiempo';
+secciones.salesCorriendo.opciones = [
+   ["buscaSalida", "Intentas buscar una salida"]
+];
+secciones.salesCorriendo.test = ["des", 0, 'vinoAlguien'];
+secciones.salesCorriendo.efectos = [];
+
 secciones.tunelDch = {};
 secciones.length++;
 secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
