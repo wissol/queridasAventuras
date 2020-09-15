@@ -227,12 +227,15 @@ secciones.noMeFio.opciones = [
 secciones.noMeFio.test = [];
 secciones.noMeFio.efectos = [];
 
-//secciones.niCaso = {};
-//secciones.length++;
-//secciones.niCaso.textoPrincipal = '';
-//secciones.niCaso.opciones = [];
-//secciones.niCaso.test = [];
-//secciones.niCaso.efectos = [];
+secciones.niCaso = {};
+secciones.length++;
+secciones.niCaso.textoPrincipal = 'Intentas seguir explorando pero se pone a chillar como un condenado';
+secciones.niCaso.opciones = [
+  ["aLoMio", "Sigues a lo tuyo, esos fantasmas azules les da igual todo"],
+  ["salesCorriendo", "Sales corriendo, no sea que haya más gente"]
+];
+secciones.niCaso.test = [];
+secciones.niCaso.efectos = [];
 
 secciones.tunelDch = {};
 secciones.length++;
