@@ -253,6 +253,13 @@ secciones.salesCorriendo.opciones = [
 secciones.salesCorriendo.test = ["des", 0, 'vinoAlguien'];
 secciones.salesCorriendo.efectos = [];
 
+secciones.vinoAlguien = {};
+secciones.length++;
+secciones.vinoAlguien.textoPrincipal = 'pues al final vino un [alguien] a por ti... y te pilló antes de que pudieras escapar... un final bonito etc';
+secciones.vinoAlguien.opciones = [];
+secciones.vinoAlguien.test = [];
+secciones.vinoAlguien.efectos = [];
+
 secciones.tunelDch = {};
 secciones.length++;
 secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
