@@ -239,26 +239,30 @@ secciones.niCaso.efectos = [];
 
 secciones.aLoMio = {};
 secciones.length++;
-secciones.aLoMio.textoPrincipal = 'pues al final vino un [alguien] a por ti... mala suertita';
-secciones.aLoMio.opciones = [];
+secciones.aLoMio.textoPrincipal = 'pues al final no vino nadie... el pobre linternita se enfada y llora encuentras el <img alt="mapa">';
+secciones.aLoMio.opciones = [
+
+];
 secciones.aLoMio.test = [];
 secciones.aLoMio.efectos = [];
 
 secciones.salesCorriendo = {};
 secciones.length++;
-secciones.salesCorriendo.textoPrincipal = 'pues al final vino un [alguien] a por ti... pero pudiste escapar a tiempo';
+secciones.salesCorriendo.textoPrincipal = 'parece que pudiste escapar a tiempo';
 secciones.salesCorriendo.opciones = [
    ["buscaSalida", "Intentas buscar una salida"]
 ];
-secciones.salesCorriendo.test = ["des", 0, 'vinoAlguien'];
+secciones.salesCorriendo.test = [];
 secciones.salesCorriendo.efectos = [];
 
-secciones.vinoAlguien = {};
+//aPorEl
+
+secciones.aPorEl = {};
 secciones.length++;
-secciones.vinoAlguien.textoPrincipal = 'pues al final vino un [alguien] a por ti... y te pilló antes de que pudieras escapar... un final bonito etc';
-secciones.vinoAlguien.opciones = [];
-secciones.vinoAlguien.test = [];
-secciones.vinoAlguien.efectos = [];
+secciones.aPorEl.textoPrincipal = 'pues al final vino un [alguien] a por ti... y te pilló antes de que pudieras escapar... un final bonito etc';
+secciones.aPorEl.opciones = [];
+secciones.aPorEl.test = [];
+secciones.aPorEl.efectos = [];
 
 secciones.tunelDch = {};
 secciones.length++;
