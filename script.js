@@ -117,7 +117,6 @@ $("#opciones").on("click",".opcion", function(){
 });
 
 $( "#inicial" ).submit(function( event ) {
-  console.log("Secciones:", secciones.length);
   let nombre =  $("#inputNombre").val();
   let edad =  dice(faces=4,rolls=3) + 7;
   if(nombre==""){nombre=generaNombre();}
