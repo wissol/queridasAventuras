@@ -237,6 +237,13 @@ secciones.niCaso.opciones = [
 secciones.niCaso.test = [];
 secciones.niCaso.efectos = [];
 
+secciones.aLoMio = {};
+secciones.length++;
+secciones.aLoMio.textoPrincipal = 'pues al final vino un [alguien] a por ti... mala suertita';
+secciones.aLoMio.opciones = [];
+secciones.aLoMio.test = [];
+secciones.aLoMio.efectos = [];
+
 secciones.tunelDch = {};
 secciones.length++;
 secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
