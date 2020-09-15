@@ -167,6 +167,18 @@ secciones.descuelgueAccidentado.test = [];
 secciones.descuelgueAccidentado.efectos = ["herido"];
 secciones.descuelgueAccidentado.seccionSiMuere = ["muereCaidaDescuelgue"];
 
+// "buscaSalida"
+
+secciones.buscaSalida = {};
+secciones.length++;
+secciones.buscaSalida.textoPrincipal = 'después de buscar un poquito bla bla, te ofrezco dos salidas un nuevo túnel como el principal y una trampilla';
+secciones.buscaSalida.opciones = [
+  ["nuevoTunel", "Vas al nuevo túnel"],
+  ["vasTrampilla", "Go to the trap door"]
+];
+secciones.buscaSalida.test = [];
+secciones.buscaSalida.efectos = [];
+
 secciones.alDespachoIngeniero = {};
 secciones.length++;
 secciones.alDespachoIngeniero.textoPrincipal = 'Casi no la ves, de no ser por tus ojos... etc...Una discreta y fina cuerda cuelga de un extremo a otro del marco de la puerta. ¡Qué curioso, ¿no?';
@@ -239,9 +251,9 @@ secciones.niCaso.efectos = [];
 
 secciones.aLoMio = {};
 secciones.length++;
-secciones.aLoMio.textoPrincipal = 'pues al final no vino nadie... el pobre linternita se enfada y llora encuentras el <img alt="mapa">';
+secciones.aLoMio.textoPrincipal = 'pues al final no vino nadie... el pobre linternita se enfada y llora encuentras el <img alt="mapa"> armado con esta información quizás sea más fácil encontrar una salida';
 secciones.aLoMio.opciones = [
-
+  ["buscaSalida", "Intentas buscar una salida"]
 ];
 secciones.aLoMio.test = [];
 secciones.aLoMio.efectos = [];
