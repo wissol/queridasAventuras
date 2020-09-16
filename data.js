@@ -167,17 +167,40 @@ secciones.descuelgueAccidentado.test = [];
 secciones.descuelgueAccidentado.efectos = ["herido"];
 secciones.descuelgueAccidentado.seccionSiMuere = ["muereCaidaDescuelgue"];
 
-// "buscaSalida"
-
 secciones.buscaSalida = {};
 secciones.length++;
 secciones.buscaSalida.textoPrincipal = 'después de buscar un poquito bla bla, te ofrezco dos salidas un nuevo túnel como el principal y una trampilla';
 secciones.buscaSalida.opciones = [
   ["nuevoTunel", "Vas al nuevo túnel"],
-  ["vasTrampilla", "Go to the trap door"]
+  ["vasTrampilla", "Vas a la trampilla"]
 ];
 secciones.buscaSalida.test = [];
 secciones.buscaSalida.efectos = [];
+
+secciones.nuevoTunel = {};
+secciones.length++;
+secciones.nuevoTunel.textoPrincipal = 'el túnel se abre a una cueva con estalactitas y eso. un lago subterráneo lo cubre todo y en el centro de todo hay una señora hilando con hebras de oro y planta que va sacando de las monedas';
+secciones.nuevoTunel.opciones = [
+  ];
+secciones.nuevoTunel.test = [
+  ["teAcercasAElla", "Te acercas a ella"],
+  ["vuelves", "Vuelves por dónde has venido"]
+];
+secciones.nuevoTunel.efectos = [];
+
+secciones.vasTrampilla = {};
+secciones.length++;
+secciones.vasTrampilla.textoPrincipal = 'uno de los límites de la magia con la que la bruja me dio mis poderes es que solo una de mis víctimas podría vencerme si llegaba hasta aquí - ahora bien hasta ahora ninguna lo ha conseguido y todos son mis servidores en la eternidad. ¿Te rindes ya y acortas tus sufrimientos?';
+secciones.vasTrampilla.opciones = [
+  ["sA" , "Luchas de forma normal"],    // hay que poner pistas antes para que forma usar
+  ["sB" , "Luchas de forma rara B"],
+  ["sC" , "Luchas de forma rara c"],
+  ["sD" , "Te rindes"],
+  ["sE", "Huyes"]
+];
+secciones.vasTrampilla.test = [];
+secciones.vasTrampilla.efectos = [];
+
 
 secciones.alDespachoIngeniero = {};
 secciones.length++;
@@ -266,8 +289,6 @@ secciones.salesCorriendo.opciones = [
 ];
 secciones.salesCorriendo.test = [];
 secciones.salesCorriendo.efectos = [];
-
-//aPorEl
 
 secciones.aPorEl = {};
 secciones.length++;
