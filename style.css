@@ -71,3 +71,11 @@ button, input {
 
 figure {float: left;}
 
+.nuevo {
+  background: #B22222;
+  color: #f1e9d2; 
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 1rem;
+  border: solid thick black;
+}

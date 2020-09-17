@@ -131,4 +131,24 @@ $( "#inicial" ).submit(function( event ) {
   event.preventDefault();
 });
 
+$('body').on('click', 'em', function(e) {  // Inserción de pistas haciendo click
+    let em = $(this);
+    let spanId = em.attr("title").replace(/\s/g , "").replace(/[^\w\s]|_/g, "");  //removes punctuation, then white space
+    console.log(spanId);
+    if(em.hasClass("activo")){
+      console.log("con clase");
+      $('#' + spanId).remove();
+      em.removeClass("activo");
+    } else {
+      var span = $("<span></span>");
+      console.log("SIN clase");
+      em.addClass("activo");
+      span.text(" " + em.attr("title") + " ");
+      span.attr( "id", spanId);
+      span.addClass("nuevo");
+      em.after(span);
+    }
+});
+
+
 
