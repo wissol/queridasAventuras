@@ -8,9 +8,10 @@ secciones.length++;
 secciones.inicioAventura.textoPrincipal = '\
   <h2>¿Dónde estás?</h2>\
   <p class="letraCapitular">Malas noticias: te has perdido. Aunque, por lo menos, por una buena razón.\
-  Todo el mundo sabe que los <em title="Un bello animal con pelo en el torso y plumas en las alas y que parece exactamente la mezcla de un gato y un búho. Aunque dicen que no hay dos iguales.">gatobúhos</em> son mágicos. Y claro, cuando viste uno en el patio del\
-  orfanato tuviste que seguirle hasta que se te escapó en lo más profundo del <em>Bosque de la Luna Grande</em>.</p>\
-  <p>Desde entonces no has hecho sino <strong>perderte más y más</strong>. Has llegado al sitio más raro que puedas imaginars en un bosque: un jardín. Sí, un jardín cuadrado, con caminos, estatuas y fuentes. Pero no hay rastro de ningún jardinero, si no cuentas a esos simpáticos <em title="No son fantasmas de verdad, sino personas de luz azul que no hacen daño a nadie, pero tampoco hablan contigo. Solo hacen lo que la magia les manda.">fantasmas azules,</em> ¡claro!  \
+  Todo el mundo sabe que los <em title="Un bello animal con pelo en el torso y plumas en las alas y que parece exactamente la mezcla de un gato y un búho. Aunque dicen que no hay dos iguales.">gatobúhos son mágicos.</em></p>\
+  <p>Y claro, cuando viste uno en el patio del\
+  orfanato tuviste que seguirle hasta que se te escapó en lo más profundo del <em title="Tiene forma de luna llena,y siempre te han advertido de que no vayas de noche, porque hay goblins. ¿Te lo crees?">Bosque de la Luna Grande.</em></p>\
+  <p>Desde entonces no has hecho sino <strong>perderte más y más</strong>. Has llegado al sitio más raro que puedas imaginars en un bosque: un jardín. Sí, un jardín cuadrado, con caminos, estatuas y fuentes. Pero no hay rastro de ningún jardinero, si no cuentas a esos simpáticos <em title="No son fantasmas de verdad, sino personas de luz azul que no hacen daño a nadie, pero tampoco hablan contigo. Solo hacen lo que la magia les manda.">fantasmas azules.</em>  \
   <p>Luego está el edificio raro. Vamos a llamarlo así porque parece una serpiente gigante de piedra enredada en sí misma. Y para colmo la mitad está cubierta de hiedra y flores.</p>\
     <p>Lo bueno es que es mediodía y no da tanto miedo tomar una decisión. </p>\
   ';
@@ -392,7 +393,8 @@ secciones.volverCasa = {};
 secciones.length++;
 secciones.volverCasa.textoPrincipal = "\
 <h2>De noche en el bosque</h2>\
-<p>Se va a hacer de noche en el bosque y hace mucho frío...\
+<p class='letraCapitular'>Te alejas corriendo porque sabes que las aventuras son peligrosas. Sobre todo si tienen fantasmas. Cuando ya no puedes correr más, caminas muy despacio hasta que te recuperas y luego vuelves a correr. No sabes dónde estás, ni por dónde se vuelve a casa. Aunque tu casa sea un orfanato sigue siendo tu casa. Y da miedo no saber dónde estás.</p>\
+<p>Piensas en subirte a un árbol para comprobar si puedes encontrar la salida. Pero es casi de noche, y no sabes trepar muy bien. Sería demasiado peligroso intentarlo ahora. Si te caes o vas directo a las rocas o a las zarzas. </p>\
 ";
 secciones.volverCasa.opciones = [
   ["hacerRefugio", "Haces un refugio"],
