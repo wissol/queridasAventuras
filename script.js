@@ -68,7 +68,7 @@ function prueba_seccion(seccion){
 }
 
 function generaFichaPersonaje(){
-  let a = `<em title='Nombre:${localStorage["nombre"]} Edad:${localStorage["edad"]} Fue:${localStorage["fue"]}/${localStorage["fueInicial"]} Des:${localStorage["des"]} Per:${localStorage["per"]}'>&#10086;</em>`;
+  let a = `<em title='${localStorage["nombre"]},&thinsp;${localStorage["edad"]}&thinsp;años<br/>Fue:&nbsp;${localStorage["fue"]}/${localStorage["fueInicial"]} Des:&thinsp;${localStorage["des"]}  Per:&thinsp;${localStorage["per"]} '>&#10086;</em>`;
   return a;
 }
 
@@ -143,7 +143,7 @@ $('body').on('click', 'em', function(e) {  // Inserción de pistas haciendo clic
       var span = $("<span></span>");
       console.log("SIN clase");
       em.addClass("activo");
-      span.text(" " + em.attr("title") + " ");
+      span.html(em.attr("title"));
       span.attr( "id", spanId);
       span.addClass("nuevo");
       em.after(span);
