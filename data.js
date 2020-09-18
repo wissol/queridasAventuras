@@ -10,7 +10,7 @@ secciones.inicioAventura.textoPrincipal = '\
   <p class="letraCapitular">Malas noticias: te has perdido. Aunque, por lo menos, por una buena razón.\
   Todo el mundo sabe que los <em title="Un bello animal con pelo en el torso y plumas en las alas y que parece exactamente la mezcla de un gato y un búho. Aunque dicen que no hay dos iguales.">gatobúhos son mágicos.</em></p>\
   <p>Y claro, cuando viste uno en el patio del\
-  orfanato tuviste que seguirle hasta que se te escapó en lo más profundo del <em title="Tiene forma de luna llena,y siempre te han advertido de que no vayas de noche, porque hay goblins. ¿Te lo crees?">Bosque de la Luna Grande.</em></p>\
+  orfanato tuviste que seguirle hasta que se te escapó en lo más profundo del <em title="Tiene forma de luna llena,y siempre te han advertido de que no vayas de noche, porque hay bandidos. ¿Te lo crees?">Bosque de la Luna Grande.</em></p>\
   <p>Desde entonces no has hecho sino <strong>perderte más y más</strong>. Has llegado al sitio más raro que puedas imaginars en un bosque: un jardín. Sí, un jardín cuadrado, con caminos, estatuas y fuentes. Pero no hay rastro de ningún jardinero, si no cuentas a esos simpáticos <em title="No son fantasmas de verdad, sino personas de luz azul que no hacen daño a nadie, pero tampoco hablan contigo. Solo hacen lo que la magia les manda.">fantasmas azules.</em>  \
   <p>Luego está el edificio raro. Vamos a llamarlo así porque parece una serpiente gigante de piedra enredada en sí misma. Y para colmo la mitad está cubierta de hiedra y flores.</p>\
     <p>Lo bueno es que es mediodía y no da tanto miedo tomar una decisión. </p>\
@@ -409,13 +409,15 @@ secciones.length++;
 secciones.sigueCaminando.textoPrincipal = "\
 <h2>Te encuentran, ¡bien!</h2>";
 secciones.sigueCaminando.opciones = [];
-secciones.sigueCaminando.test = ["per",0,"pilladoGoblins"]; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
+secciones.sigueCaminando.test = ["per",10,"pilladoKarppis"]; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
 
-secciones.pilladoGoblins = {};
+secciones.pilladoKarppis = {};
 secciones.length++;
-secciones.pilladoGoblins.textoPrincipal = "<h2>Te han pillado los goblins!</h2>";
-secciones.pilladoGoblins.opciones = [];
-secciones.pilladoGoblins.test = [];
+secciones.pilladoKarppis.textoPrincipal = '<h2>Te han pillado</h2>\
+<p class="letraCapitular">Hay un torre de piedra en medio del bosque, apenas más alta que los árboles que la circundan. Allí vive una tribu de seres como los humanos, pero algo más bajitos, de cuatro dedos en manos y pies, y con la piel en varios tonos marrones, a manera de camuflaje. Se les suele llamar <em title="Se pronuncia karp-pis, marcando las dos <q>p</q>">karppis.</em></p>\
+<p>Desde esa torre salen a cazar conejos y ciervos. Pero si detectan algún viajero solitario, sobre todo si es un niño perdido, organizan una emboscada. Esperan a la noche, porque conocen tan bien la zona que parece que vieran en la oscuridad. En realidad te siguieron con sus grandes orejas y sus finas narices. Se quedaron quietos agazapados hasta estar seguros que no tuvieras una oportunidad ni de defenderte ni escapar. Ahora te llevan, vivo y sano, pero prisionero a su torre. ¿Tu futuro? Hay comerciantes que compran niños para llevarlos a países extranjeros, donde venderlos como esclavos en el palacio del algún reyezuelo. Aunque, ¿quién puede decir que nunca conseguirás escapar?</p>';
+secciones.pilladoKarppis.opciones = [];
+secciones.pilladoKarppis.test = [];
 
 secciones.hacerRefugio = {};
 secciones.length++;
