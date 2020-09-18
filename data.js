@@ -406,10 +406,11 @@ secciones.volverCasa.seccionSiMuere = "muere0";
 
 secciones.sigueCaminando = {};
 secciones.length++;
-secciones.sigueCaminando.textoPrincipal = "\
-<h2>Te encuentran, ¡bien!</h2>";
+secciones.sigueCaminando.textoPrincipal = '\
+<h2>Te encuentran, ¡bien!</h2>\
+<p class="letraCapitular">La noche fue horrible. Muchas veces creías que te seguían y te has pasado la mitad del tiempo huyendo de ruidos raros entre los matorrales. Seguro que no eran sino animales que se asustaban al verte pasar. Pero a ver quién se arriesga. Te has llevando un par de tortazos, hasta una vez tropezaste con una raíz y rodaste por el suelo. Pero todo eso ha pasado ya, porque del pueblo mandaron una patrulla en tu búsqueda, y a primera hora de la mañana te encontraron, sucio y magullado, pero vivo. Hoy desayunas con el alcalde y por la tarde, bueno, seguro que tienes que dar muchas explicaciones a la rectora del orfanato. ¡Suerte! </p>';
 secciones.sigueCaminando.opciones = [];
-secciones.sigueCaminando.test = ["per",10,"pilladoKarppis"]; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
+secciones.sigueCaminando.test = ["per",0,"pilladoKarppis"]; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
 
 secciones.pilladoKarppis = {};
 secciones.length++;
