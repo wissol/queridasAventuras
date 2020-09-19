@@ -401,8 +401,7 @@ secciones.volverCasa.opciones = [
   ["sigueCaminando", "Sigues Caminando"]
 ];
 secciones.volverCasa.test = [];
-secciones.volverCasa.efectos = ["herido"];
-secciones.volverCasa.seccionSiMuere = "muere0";
+secciones.volverCasa.efectos = [];
 
 secciones.sigueCaminando = {};
 secciones.length++;
@@ -428,16 +427,11 @@ secciones.hacerRefugio.textoPrincipal = '<h2>Consigues hacerte un refugio</h2>\
 secciones.hacerRefugio.opciones = [];
 secciones.hacerRefugio.test = ["des",3,"pasasFrio"];
 
-secciones.vuelveACasa = {};
-secciones.length++;
-secciones.vuelveACasa.textoPrincipal = "<h2>Consigues volver a casa, el orfanato, ¡bien!</h2>";
-secciones.vuelveACasa.opciones = [];
-secciones.vuelveACasa.test = [];
-
 secciones.pasasFrio = {};
 secciones.length++;
-secciones.pasasFrio.textoPrincipal = "<h2>Pasa frío, pero probablemente sobrevivas</h2>";
-secciones.pasasFrio.opciones = [["vuelveACasa", "Vuelve a casa"]];
+secciones.pasasFrio.textoPrincipal = '<h2>Una noche horrible</h2>\
+<p class="letraCapitular">Es más fácil en los cuentos. En la vida real hacerte un refugio con lo que ofrece el bosque lleva mucho tiempo y esfuerzo. Sobre todo cuando solo eres un niño con miedo. Encima se te hace de noche y es imposible ver nada. Mucho menos hacer un fuego. Como último remedio te refugias bajo un gran tronco caído y medio podrido. El frío es horrible y no te duermes del miedo que te da despertar. Pero a la mañana siguiente, a pesar del hambre y el cansancio, vives. Y lo que es mejor, pronto escuchas las voces de la patrulla ciudadana que ha venido a buscarte. Hoy desayunas con el alcalde, aunque por la tarde tendrás mucho que explicar. ¡Suerte!';
+secciones.pasasFrio.opciones = [];
 secciones.pasasFrio.test = [];
 secciones.pasasFrio.efectos = ["herido"];
 secciones.pasasFrio.seccionSiMuere = "muere1";
