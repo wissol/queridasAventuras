@@ -14,7 +14,9 @@ body { margin: 1vh auto; padding:1rem; max-width: 45em;}
 
 section {max-width: 35rem; margin: 0 auto;}
 
-h1{font-size: 3.0em; margin: 1vh auto; max-width: 40em; text-align: center;}
+h1{font-size: 3.0em; margin: 1vh auto; }
+header {max-width: 40rem; text-align: center;}
+footer {font-size: 1.7rem; max-width: 35rem; margin:12vh auto; text-align: center;}
 
 p {margin: 1vh auto}
 
@@ -74,7 +76,6 @@ figure {float: left;}
 .nuevo {
   background: #B22222;
   color: #f1e9d2; 
-  display: inline-block;
   padding: .5rem;
   border-radius: 1rem;
   border: solid thick black;

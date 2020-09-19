@@ -12,7 +12,8 @@
     <main> 
 
     <header>
-      <h1>El edificio raro del jardín embrujado<span id="fichaPersonaje"></span></h1>
+      <h1>El edificio raro del jardín embrujado</h1>
+      
     </header>    
 
     <section id="textoPrincipal">      
@@ -28,10 +29,11 @@
           <li>No le des a recargar, ni a F5</li>
           <li>No uses las flechas de tu navegador</li>
           <li>¡O pasarán cosas raras y se estropeará el juego</li>
+          <li>Tu ficha de personaje aparecerá en la parte inferior de la página</li>
         </ol>     
 
         <form id="inicial">
-          <p>Ahora escribe el nombre que prefieras y <strong>Empieza tu Aventura</strong>.
+          <p>Ahora escribe el <em title="Si lo dejas en blanco tendrás uno al azar">nombre</em> que prefieras y haz click en <strong>Empieza tu Aventura</strong>.</p>
           <input type="text" placeholder="tu nombre" id="inputNombre">
           <input type="submit" value="Empieza la aventura" id="inputBoton">
         </form>
@@ -39,6 +41,10 @@
         </section> 
       
       <section id="opciones"></section>
+
+      <footer>
+        <p id="fichaPersonaje">&#10086;~&#10086;</p>
+      </footer>
   </main>    
     
     <!-- Scripts --------------------------------------------->
