@@ -436,17 +436,9 @@ secciones.pasasFrio.test = [];
 secciones.pasasFrio.efectos = ["herido"];
 secciones.pasasFrio.seccionSiMuere = "muere1";
 
-secciones.muere0 = {};
-secciones.length++;
-secciones.muere0.textoPrincipal = "<h2>Has muerto de frío y hambre, qué pena</h2>";
-secciones.muere0.opciones = [];
-secciones.muere0.test = [];
-secciones.muere0.efectos = [];
-
-
 secciones.muere1 = {};
 secciones.length++;
-secciones.muere1.textoPrincipal = "<h2>Has muerto de frío y hambre, qué pena</h2>";
+secciones.muere1.textoPrincipal = "<h2>Has muerto de frío y hambre</h2><p>Intentaste hacer un refugio, pero no es fácil para un niño y luego fue una noche horrible, especialmente para un niño mal alimentado como tú. Cuando te encontraron ya habías muerto. La única buena noticia es que nunca llegaste a despertar...</p>";
 secciones.muere1.opciones = [];
 secciones.muere1.test = [];
 secciones.muere1.efectos = [];
