@@ -47,7 +47,7 @@ function generaNombre(){
   let nimi = "";
   let silabas = ["fix", "el", "bli", "mus", "ta", "ter", "ve", "ka", "uan", "nio", "vid", "a", "e", "i", "o", "u", "fe", "de", "ri",
                  "suo", "mi", "nel", "ca", "bal", "ni", "mi", "an", "to", "ku", "da", "guel", "ua", "es", "te", "ban", "co",
-                 "yo", "de", "ver", "lu", "lui", "ju", "na", "pe", "du", "ar", "te", "bru", "no", "mat", "ti"];
+                 "yo", "de", "ver", "lu", "lui", "ju", "na", "pe", "du", "ar", "te", "bru", "no", "mat", "ti", "car", "los", "fer", "nan","do", "ma", "ría"];
   let numeroSilabas = (dice(faces=4, rolls=3)/3);
   for(let i=1;i<=numeroSilabas;i++){
     nimi += silabas[Math.floor(Math.random()*silabas.length)];
@@ -133,20 +133,20 @@ $( "#inicial" ).submit(function( event ) {
 
 $('body').on('click', 'em', function(e) {  // Inserción de pistas haciendo click
     let em = $(this);
-    let spanId = em.attr("title").replace(/\s/g , "").replace(/[^\w\s]|_/g, "");  //removes punctuation, then white space
-    console.log(spanId);
+    let pId = em.attr("title").replace(/\s/g , "").replace(/[^\w\s]|_/g, "");  //removes punctuation, then white space
+    console.log(pId);
     if(em.hasClass("activo")){
       console.log("con clase");
-      $('#' + spanId).remove();
+      $('#' + pId).remove();
       em.removeClass("activo");
     } else {
-      var span = $("<span></span>");
+      var paragraph = $("<span></span>");
       console.log("SIN clase");
       em.addClass("activo");
-      span.html(em.attr("title"));
-      span.attr( "id", spanId);
-      span.addClass("nuevo");
-      em.after(span);
+      paragraph.html(em.attr("title"));
+      paragraph.attr( "id", pId);
+      paragraph.addClass("nuevo");
+      em.parent().after(paragraph);
     }
 });
 
