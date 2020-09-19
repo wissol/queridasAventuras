@@ -42,8 +42,7 @@ secciones.puertaRaro.textoPrincipal = '\
 <p class="letraCapitular">La puerta tiene forma triangular, es de roble y es evidente que no se abre desde hace ya mucho tiempo. No tiene cerrojo pero si <em title="una inscripción pone, <<dame de comer>> ">una oquedad donde</em> debería estar la cerradura con la forma de la cabeza de una serpiente. También hay unas <em title="No intentes rescatarme, por favor. ¡Es muy peligroso!">letras garabateadas</em> en la puerta.</p>';
 secciones.puertaRaro.opciones = [
   ["buscasRaton", "Buscas un ratón"],
-  ["ponesPan", "Metes un trocito de pan en la puerta"],
-  ["llamasPuerta", "Simplemente llamas a la puerta"]
+  ["ponesPan", "Metes un trocito de pan en la puerta"]
 ];
 secciones.puertaRaro.test = [];
 
@@ -52,21 +51,12 @@ secciones.length++;
 secciones.ponesPan.textoPrincipal = "<h2>Te ha escupido el pan!</h2><p>La puerta escupe el pan con fuerza dándote en todo el ojo!";
 secciones.ponesPan.opciones = [
   ["buscasRaton", "Buscas un ratón"],
-  ["ponesPan", "Metes otro trocito de pan en la puerta"],
-  ["llamasPuerta", "Simplemente llamas a la puerta"]
+  ["ponesPan", "Metes otro trocito de pan en la puerta"]
 ];
 secciones.ponesPan.test = [];
 secciones.ponesPan.efectos = ["magullado"];
 
-secciones.llamasPuerta = {};
-secciones.length++;
-secciones.llamasPuerta.textoPrincipal = "Una criatura mágica le dice. ¿No pensarías entrar en un lugar mágico solo llamando a la puerta? Y recibe un capón";
-secciones.llamasPuerta.opciones = [
-  ["buscasRaton", "Buscas un ratón"],
-  ["ponesPan", "Metes un trocito de pan en la puerta"],
-];
-secciones.llamasPuerta.test = [];
-secciones.llamasPuerta.efectos = ["magullado"];
+
 
 secciones.buscasRaton = {};
 secciones.length++;
