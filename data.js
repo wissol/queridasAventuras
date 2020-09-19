@@ -422,9 +422,11 @@ secciones.pilladoKarppis.test = [];
 
 secciones.hacerRefugio = {};
 secciones.length++;
-secciones.hacerRefugio.textoPrincipal = "<h2>Consigues hacerte un refugio</h2>";
-secciones.hacerRefugio.opciones = [["vuelveACasa", "Vuelve a casa"]];
-secciones.hacerRefugio.test = ["des",0,"pasasFrio"];
+secciones.hacerRefugio.textoPrincipal = '<h2>Consigues hacerte un refugio</h2>\
+<p>Te pones a trabajar con rapidez. Buscas primero una piedra puntiaguda con la que improvisas una especie de pala. Con ella sacas raíces jóvenes, flexibles como cuerdas. Después buscas ramas caídas que anclas al suelo y atas, formando una estructura que cubres con hojas y todo lo que encuentras. Aún así careces de lo más importante: un fuego. Yesca hay de sobra en el bosque, pero no trajiste pedernal y ya es demasiado oscuro para buscarlo.</p>\
+<p>Pasas la noche aterido de frío, casi sin dormir. Pero a la mañana siguiente, a pesar del hambre y el cansancio, vives. Y lo que es mejor, pronto escuchas las voces de la patrulla ciudadana que ha venido a buscarte. Hoy desayunas con el alcalde, aunque por la tarde tendrás mucho que explicar. ¡Suerte!';
+secciones.hacerRefugio.opciones = [];
+secciones.hacerRefugio.test = ["des",3,"pasasFrio"];
 
 secciones.vuelveACasa = {};
 secciones.length++;
