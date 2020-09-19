@@ -39,7 +39,7 @@ secciones.puertaRaro = {};
 secciones.length++;
 secciones.puertaRaro.textoPrincipal = '\
 <h2>Deberías tener miedo</h2>\
-<p class="letraCapitular">La puerta tiene forma triangular, es de roble y es evidente que no se abre desde hace ya mucho tiempo. No tiene cerrojo pero si <em title="una inscripción pone, <<dame de comer>> ">una oquedad donde</em> debería estar la cerradura con la forma de la cabeza de una serpiente. También hay unas <em title="No intentes rescatarme, por favor. ¡Es muy peligroso!">letras garabateadas</em> en la puerta.</p>';
+<p class="letraCapitular">Una puerta triangular de madera de roble, más vieja que un dragón. Tiene grabada las ilustraciones de una historia, &mdash;modo irónico&mdash; muy bonita. Brujos y brujas volaron desde las nubes, pillaron siete niñas y cuatro niños, dos de ellos humanos. Luego los llevaron a un bosque y los metieron en vasos gigantes. Y estaban muy felices, los brujos y las brujas, digo.</p><p>Por lo demás la puerta es muy sencilla. No tiene aldaba ni manilla, pero sí <em title="Una inscripción pone: <q>dame de comer</q>">una cerradura</em> con forma de <em title="¿Qué comerá una serpiente típica?">cabeza de una serpiente.</em></p>';
 secciones.puertaRaro.opciones = [
   ["buscasRaton", "Buscas un ratón"],
   ["ponesPan", "Metes un trocito de pan en la puerta"]
