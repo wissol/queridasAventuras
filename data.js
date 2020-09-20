@@ -60,7 +60,7 @@ secciones.ponesPan.efectos = ["magullado"];
 
 secciones.buscasRaton = {};
 secciones.length++;
-secciones.buscasRaton.textoPrincipal = '<h2>Entras</h2><p>Consigues cazar el ratón, y lo pones en la puerta, entra y vuelve con una llave, que usas para abrir. descripción bla bla. Acertijo... como te gustaría vivir... pulsar palanca</p>';
+secciones.buscasRaton.textoPrincipal = '<h2>Entras</h2><p>No es demasiado fácil atrapar a un ratón, especialmente si es muy pequeño, pero tu lo has conseguido. Hasta te ha parecido que, después de tu <em title="O sea el intento número 300. Es una exageración, claro. Vale, ya paro de tratarte como un niño pequeño.">tricentésimo intento</em>, el ratón se ha dejado atrapar. Las buenas noticias para él son que no se te ha ocurrido comértelo sino meterlo dentro de la cabeza de serpiente de latón de la puerta.</p> <p>Y es interesante, porque nada más desaparecer en el agujero la puerta se abre; tu primera victoria.</p>';
 secciones.buscasRaton.opciones = [
   ["entrasEdificio", "Entra al edifico"]
 ];

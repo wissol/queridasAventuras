@@ -11,12 +11,11 @@ html
 em {color:#B22222; font-weight: bold;}
 
 body { margin: 1vh auto; padding:1rem; max-width: 45em;}
-
-section {max-width: 35rem; margin: 0 auto;}
+main {max-width: 35rem;  margin: 1vh auto;}
 
 h1{font-size: 3.0em; margin: 1vh auto; }
 header {max-width: 40rem; text-align: center;}
-footer {font-size: 1.7rem; max-width: 35rem; margin:12vh auto; text-align: center;}
+footer {font-size: 1.7rem; margin:12vh auto; text-align: center;}
 
 p {margin: 1vh auto}
 
