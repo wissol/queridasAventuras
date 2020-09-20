@@ -287,7 +287,7 @@ secciones.aPorEl.efectos = [];
 
 secciones.tunelDch = {};
 secciones.length++;
-secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> Descripción de la araña que casi te atrapó y eso... Hay un príncipe / princesa atrapado en la telaraña';
+secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> <p class="letraCapitular">Casi te pilló la araña cazadora cuando entraste deprisa en el túnel. Menos mal que la viste justo antes de que te lanzara su tela pegajosa. Un segundo más tarde y habrías sido como una momia de mosca. Has corrido hasta el fondo del túnel, y no ves dónde seguir huyendo.</p><p>Y en el fondo de esta cámara, hay una telaraña, grande como nunca has visto, y en el centro una momia de seda que, por su forma, parece alojar una <em title="Como un niño, por ejemplo.">persona pequeña</em>.';
 secciones.tunelDch.opciones = [
   ["intentasRescate", "Intentas rescatar a la víctima"],
   ["buscasSalida", "Buscas una salida"],
