@@ -1,3 +1,5 @@
+const EL_FIN = "<p id='elFin'>~~ Fin ~~</p>"
+
 function isNull(v){ return v !== null;}
 
 function ejecutarEfecto(efecto){
@@ -74,7 +76,7 @@ function generaFichaPersonaje(){
 
 function actualizaHtmlSeccionMortal(seccion){
    $( "#textoPrincipal" ).html( seccion.textoPrincipal );
-   htmlopciones = "<p id='elFin'>El Fin</p>";
+   htmlopciones = EL_FIN;
    $( "#opciones" ).html( htmlopciones ) ;  
   $( "#fichaPersonaje" ).html( generaFichaPersonaje()  ) ;
 }
@@ -98,7 +100,7 @@ function actualiza_html_seccion(seccion){
   $( "#textoPrincipal" ).html( seccion.textoPrincipal );
   let htmlopciones = "";
   if(seccion.opciones.length === 0){
-    htmlopciones = "<p id='elFin'>El Fin</p>";
+    htmlopciones = EL_FIN;
   } else {
     htmlopciones = "<h2>Tus opciones</h2>";
     baraja(seccion.opciones).forEach(element => 
