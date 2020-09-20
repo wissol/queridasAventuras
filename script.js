@@ -88,8 +88,13 @@ function actualiza_html_seccion(seccion){
     ejecutarEfecto(seccion.efectos[0]);
   }
   if( localStorage["fue"] < 1 ){
-    return actualizaHtmlSeccionMortal(secciones[seccion.seccionSiMuere]);
-    }
+    let seccionMuerte = seccion.seccionSiMuere;
+    if(typeof(seccionMuerte)=="undefined"){
+      seccionMuerte = "muere14";
+    } 
+    actualizaHtmlSeccionMortal(secciones[seccionMuerte]);
+    return;
+  }
   $( "#textoPrincipal" ).html( seccion.textoPrincipal );
   let htmlopciones = "";
   if(seccion.opciones.length === 0){

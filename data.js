@@ -48,7 +48,7 @@ secciones.puertaRaro.test = [];
 
 secciones.ponesPan = {};
 secciones.length++;
-secciones.ponesPan.textoPrincipal = "<h2>Te ha escupido el pan!</h2><p>La puerta escupe el pan con fuerza dándote en todo el ojo!";
+secciones.ponesPan.textoPrincipal = "<h2>¡Te ha escupido el pan!</h2><p>La puerta escupe el pan con fuerza dándote en todo el ojo. ¡Eso ha dolido!";
 secciones.ponesPan.opciones = [
   ["buscasRaton", "Buscas un ratón"],
   ["ponesPan", "Metes otro trocito de pan en la puerta"]
@@ -446,6 +446,13 @@ secciones.muereCaidaDescuelgue.textoPrincipal = 'Te has roto una mano y un pie y
 secciones.muereCaidaDescuelgue.opciones = [];
 secciones.muereCaidaDescuelgue.test = [];
 secciones.muereCaidaDescuelgue.efectos = [];
+
+secciones.muere14 = {};
+secciones.length++;
+secciones.muere14.textoPrincipal = '<h2>Se acabó tu aventura</h2><p>Estás hecho polvo y no te puedes levantar. Pasará mucho tiempo antes de que te recuperes y tu única esperanza de sobrevivir es que venga alguien a socorrerte.</p>';
+secciones.muere14.opciones = [];
+secciones.muere14.test = [];
+secciones.muere14.efectos = [];
 
 secciones._404 = {};
 secciones._404.textoPrincipal = "<h2>Esto es un error</h2><p>Aquí debería haber una sección, pero ha salido un bug</p>";
