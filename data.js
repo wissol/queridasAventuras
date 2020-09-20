@@ -80,10 +80,9 @@ secciones.dificilRaton.efectos = ["magullado"];
 secciones.entrasEdificio = {};
 secciones.length++;
 secciones.entrasEdificio.textoPrincipal = '\
-<figure><img src="img/acertijo1.jpg"></figure>\
+<figure><img src="img/fibo.jpg"></figure>\
 <h2>En el edificio raro</h2>\
-<p>Te acercas a la estatua, esquivando los candelabros y las piedras de luz que hay sobre su alfombra. En el libro que sostiene la estatua está escrito: <q>Cuatro candelabros de nueve luces: algo falta, mucho sobra</q>. Otra cosa te interesa: junto a la estatua, escondida de forma que casi no se ve, hay una palanca<p>\
-';
+<p class="letraCapitular">Una vez dentro del edificio la entrada te sorprende. Es una habitación cuadrada, sin ventanas ni puertas que lleven a otra habitación. Va dividida en dos partes: la más cercana a ti, tiene el suelo de losetas cuadradas que forman una especie de ajedrezado. En cada casilla hay un número de candelabros y <em title="Las piedras de luz son cristales naturales que emiten naturalmente una luz pálida de diversos colores">piedras de luz</em> doradas. En la otra zona, junto a la pared, se llergue la estatua de una persona que lee un libro de piedra.</p><p>Te acercas a la estatua, esquivando los candelabros y las piedras de luz que hay sobre su alfombra. En el libro que sostiene la estatua está escrito: <q>Cuatro candelabros de nueve luces: algo falta, mucho sobra</q>. Otra cosa te interesa: junto a la estatua, escondida de forma que casi no se ve, hay una palanca. Te preguntas qué pasaría si la empleas ahora.</p>';
 secciones.entrasEdificio.opciones = [
   ["usaPalanca", "Bajas la palanca"],
   ["quitaDos", "Quitas dos candelabros grandes y pones tres piedras de luz"],
@@ -95,8 +94,8 @@ secciones.usaPalanca = {};
 secciones.length++;
 secciones.usaPalanca.textoPrincipal = '\
 <h2>El laboratorio mágico</h2>\
-<p class="letraCapitular">Pasa esto: <q>Bienvenido a nuestro laboratorio mágico, querido ratoncito nuevo. Si puedes entender lo que digo, mueve la patita, por favor.</q> Te cuesta un poco entneder lo que acaba de pasar. La palanca ha debido de activar alguna trampa mágica y has viajado a una burbuja en el fondo del mar. Una burbuja creada por dos magos y dos magas, los cuatro igual de locos, si nos atenemos a lo que se dedican: transportar niños mágicamente al fondo del mar para probar nuevos conjuros con ellos.</p>\
-<p><q>No tengas miedo, solo somos secuestradores, no te vamos a matar... bueno vamos a ver si este conjuro nos sale bien. Tú no te muevas por si acaso... fuerpino, fuerpino, ajrumbayá....</q>Así comienza una parte de tu vida como conejillo de indias mágico. Espero que alguna vez consigas escapar.</p>';
+<p class="letraCapitular">Pasa esto: Estás en una jaula y un señor gigante te habla: <q>Bienvenido a nuestro laboratorio mágico, querido ratoncito nuevo. Si puedes entender lo que digo, mueve la patita, por favor.</q></p> <p>Te cuesta un poco comprender lo que acaba de pasar. La palanca ha debido de activar alguna trampa mágica y has viajado a una burbuja en el fondo del mar. Una burbuja creada por dos magos y dos magas, los cuatro igual de locos, si nos atenemos a lo que se dedican: transportar niños mágicamente al fondo del mar para probar nuevos conjuros con ellos.</p>\
+<p><q>No tengas miedo, es posible que seamos unos magos un poco, no sé, delicuentes. Pero no unos asesinos: no te vamos a matar... bueno siempre que no la fastidiemos de verdad con ningún conjuro, pero no pasa casi nunca. Tú no te muevas por si acaso... fuerpino, fuerpino, ajrumbayá....</q></p> <p>Así comienza una parte de tu vida como conejillo de indias mágico. Espero que alguna vez consigas escapar.</p>';
 secciones.usaPalanca.opciones = [];
 secciones.usaPalanca.test = []; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
 
