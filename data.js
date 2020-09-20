@@ -102,9 +102,7 @@ secciones.usaPalanca.test = []; // habilidad, target, seccion si falla, si acier
 secciones.quitaDos = {};
 secciones.length++;
 secciones.quitaDos.textoPrincipal = '\
-<figure><img src="img/acertijo1.jpg"></figure>\
-<h2>Quitas dos candelabros y pones tres piedras de luz</h2>\
-<p>Ahora tienes dos candelabros grandes y tres piedras de luz. Un total de 21 luces en la casilla. Pero no pasa nada, hm...<p>'
+<p class="letraCapitular">Quitas dos candelabros y pones tres piedras de luz. Ahora tienes dos candelabros grandes y tres piedras de luz. Un total de 21 luces en la casilla. Pero no pasa nada, hm...<p>'
 ;
 secciones.quitaDos.opciones = [
   ["usaPalanca2", "¿Bajas la palanca ahora?"],
@@ -363,8 +361,7 @@ secciones.quitaTres = {};
 secciones.length++;
 secciones.quitaTres.textoPrincipal = '\
 <h2>Quitas tres candelabros grandes y pones uno pequeño</h2>\
-<p>Ahora tienes un candelabro grande y uno pequeño. Un total de 14 luces en la casilla. Pero no pasa nada, hm...<p>\
-<figure><img src="img/acertijo1.jpg"></figure>';
+<p>Ahora tienes un candelabro grande y uno pequeño. Un total de 14 luces en la casilla. Pero no pasa nada, hm...<p>';
 secciones.quitaTres.opciones = [
   ["usaPalanca3", "¿Bajas la palanca ahora?"],
   ["quitaDos",  "Quitas tres candelabros grandes y pones uno pequeño"]
