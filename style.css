@@ -33,7 +33,7 @@ a:visited {color: blue;}
 
 .opcion {font-weight: 900;}
 
-.letraCapitular:first-letter
+h2 + p:first-letter
 {
    float:left;
    color:#B22222;
