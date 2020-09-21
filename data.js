@@ -290,7 +290,6 @@ secciones.length++;
 secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> <p class="letraCapitular">Casi te pilló la araña cazadora cuando entraste deprisa en el túnel. Menos mal que la viste justo antes de que te lanzara su tela pegajosa. Un segundo más tarde y habrías sido como una momia de mosca. Has corrido hasta el fondo del túnel, y no ves dónde seguir huyendo.</p><p>Y en el fondo de esta cámara, hay una telaraña, grande como nunca has visto, y en el centro una momia de seda que, por su forma, parece alojar una <em title="Como un niño, por ejemplo.">persona pequeña</em>.';
 secciones.tunelDch.opciones = [
   ["intentasRescate", "Intentas rescatar a la víctima"],
-  ["buscasSalida", "Buscas una salida"],
   ["tunelIzq", "Vas al otro túnel"]
 ];
 secciones.tunelDch.test = ["per",0,"pilladoAranna"];
@@ -318,9 +317,18 @@ secciones.aLoBruto.opciones = [
 secciones.aLoBruto.test = [];
 secciones.aLoBruto.efectos = [];
 
+//
+secciones.pilladoAranna = {}; 
+secciones.length++; 
+secciones.pilladoAranna.textoPrincipal = '<h2>Preso de la araña</h2>\
+<p>Ahora que una araña te ha atrapado y envuelto en su tela te lleva al centro de tu red solo puedes pensar en una cosa: que todo se acabe pronto, por favor';
+secciones.pilladoAranna.opciones = []; 
+secciones.pilladoAranna.test = [];
+secciones.pilladoAranna.efectos = [];
+
 secciones.piedraAfilada = {};
 secciones.length++;
-secciones.piedraAfilada.textoPrincipal = '<h2>Ya tienes tu bonita piedra afilada, ¿ahora qué vas a hacer con ella?';
+secciones.piedraAfilada.textoPrincipal = '<p>Ya tienes tu bonita piedra afilada, ¿ahora qué vas a hacer con ella?</p>';
 secciones.piedraAfilada.opciones = [
   ["cortarTelaraña", "Cortas la telaraña para hacerla caer"],
   ["saltaConPiedra", "Saltas a la cuerda de la telaraña, pero bien pertrechado con tu piedra afilada"]
@@ -371,7 +379,7 @@ secciones.quitaTres.test = []; // habilidad, target, seccion si falla, si aciert
 secciones.usaPalanca3 = {};
 secciones.length++;
 secciones.usaPalanca3.textoPrincipal = '<h2>De vuelta al orfanato</h2>\
-<p class="letraCapitular">Apareces en el orfanato. Concretamente sobre el tejado. ¡Vas a tener mucho que explicar! Suerte.</p>';
+<p class="letraCapitular">Una nube de humo, un aroma a fósforo y te desmayas. Cuando recuperas la consciencia apareces en el orfanato. Concretamente sobre el tejado, y en ropa interior, a las tres de la madrugada. Vas a tener mucho que explicar</p><p>Suerte.</p>';
 secciones.usaPalanca3.opciones = [];
 secciones.usaPalanca3.test = [];
 
