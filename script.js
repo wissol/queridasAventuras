@@ -49,8 +49,8 @@ function generaNombre(){
   let nimi = "";
   let silabas = ["fix", "el", "bli", "mus", "ta", "ter", "ve", "ka", "uan", "nio", "vid", "a", "e", "i", "o", "u", "fe", "de", "ri",
                  "suo", "mi", "nel", "ca", "bal", "ni", "mi", "an", "to", "ku", "da", "guel", "ua", "es", "te", "ban", "co",
-                 "yo", "de", "ver", "lu", "lui", "ju", "na", "pe", "du", "ar", "te", "bru", "no", "mat", "ti", "car", "los", "fer", "nan","do", "ma", "ría", "el", "sa", "em", "ma", "li", "via", "lur", "des","pe","do", "re", "ta"];
-  let numeroSilabas = (dice(faces=4, rolls=3)/3);
+                 "yo", "de", "ver", "lu", "lui", "ju", "na", "pe", "du", "ar", "te", "bru", "no", "mat", "ti", "car", "los", "fer", "nan","do", "ma", "ría", "el", "sa", "em", "ma", "li", "via", "lur", "des","pe","do", "re", "ta", "ven", "tu"];
+  let numeroSilabas = (dice(faces=2, rolls=2)/2)+1; // 2 to 3 syllables
   for(let i=1;i<=numeroSilabas;i++){
     nimi += silabas[Math.floor(Math.random()*silabas.length)];
   }
