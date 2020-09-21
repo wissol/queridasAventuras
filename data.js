@@ -334,6 +334,17 @@ secciones.piedraAfilada.opciones = [
 secciones.piedraAfilada.test = ["per",2,"noEncuentrasPiedra"];
 secciones.piedraAfilada.efectos = [];
 
+secciones.noEncuentrasPiedra = {};
+secciones.length++;
+secciones.noEncuentrasPiedra.titulo = 'Pues no la encuentras';
+secciones.noEncuentrasPiedra.textoPrincipal = 'Era en realidad complicado buscar en la penumbra de este túnel la piedra perfecta. Que además tiene la mal costumbre de ser pequeñas y grises, tirando a negras, como las sombras. Bueno, merece que no pierdas más el tiempo...';
+secciones.noEncuentrasPiedra.opciones = [
+  ["aLoBruto", "Arrancas la teleraña a lo bruto"],
+  ["saltoAventura", "Agarras la cuerda de telaraña y te lanzas"]
+];
+secciones.noEncuentrasPiedra.test = [];
+secciones.noEncuentrasPiedra.efectos = []; 
+
 secciones.cortarTelaraña= {};
 secciones.length++;
 secciones.cortarTelaraña.textoPrincipal = 'Cortas la telaraña, el crío que resulta ser un goblin se cae y una araña va a por tí...';
