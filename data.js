@@ -322,7 +322,7 @@ secciones.pilladoAranna.textoPrincipal = '<h2>Preso de la araña</h2>\
 <p>Sigilosa, sigilosa, sin que <em title="Tu personaje falló la tirada de PERcepción">pudieras verla, ni oírla siquiera</em> la araña te lanzó un chorro de tela pegajosa. Ahora que una araña te ha atrapado y envuelto en su tela te lleva al centro de tu red solo puedes pensar en que todo se acabe pronto, por favor.</p>';
 secciones.pilladoAranna.opciones = []; 
 secciones.pilladoAranna.test = [];
-secciones.pilladoAranna.efectos = [];
+secciones.pilladoAranna.efectos = [];//
 
 secciones.piedraAfilada = {};
 secciones.length++;
