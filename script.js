@@ -75,7 +75,13 @@ function generaFichaPersonaje(){
 }
 
 function actualizaHtmlSeccionMortal(seccion){
-   $( "#textoPrincipal" ).html( seccion.textoPrincipal );
+   let contenido = "";
+   if(typeof(seccion.titulo)!=="undefined"){
+     contenido += "<h2>" + seccion.titulo + "</h2>" + seccion.textoPrincipal;
+   } else {
+     contenido += seccion.textoPrincipal;
+   }
+   $( "#textoPrincipal" ).html( contenido );
    htmlopciones = EL_FIN;
    $( "#opciones" ).html( htmlopciones ) ;  
   $( "#fichaPersonaje" ).html( generaFichaPersonaje()  ) ;
