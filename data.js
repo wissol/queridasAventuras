@@ -326,7 +326,7 @@ secciones.pilladoAranna.efectos = [];//
 
 secciones.piedraAfilada = {};
 secciones.length++;
-secciones.piedraAfilada.textoPrincipal = '<p>Ya tienes tu bonita piedra afilada, ¿ahora qué vas a hacer con ella?</p>';
+secciones.piedraAfilada.textoPrincipal = '<h2>Un precioso instrumento</h2><p>En realidad no era tan fácil encontrarla. El mundo está lleno de rocas hasta que necesitas una. Pero lo cierto es que <em title="Tu personaje pasó la tirada de PERcepción">la encontraste</em> y ya tienes tu bonita piedra, dura, resistente y afilada, ¿ahora qué vas a hacer con ella?</p>';
 secciones.piedraAfilada.opciones = [
   ["cortarTelaraña", "Cortas la telaraña para hacerla caer"],
   ["saltaConPiedra", "Saltas a la cuerda de la telaraña, pero bien pertrechado con tu piedra afilada"]
