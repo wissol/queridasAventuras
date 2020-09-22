@@ -355,6 +355,9 @@ secciones.cortarTelaraña.opciones = [
 secciones.cortarTelaraña.test = [];
 secciones.cortarTelaraña.efectos = [];
 
+secciones.huirAranna.error = "";
+secciones.lucharAranna.error = "";
+
 secciones.saltoAventura = {};
 secciones.length++;
 secciones.saltoAventura.titulo = 'Una idea desafortunada bien ejecutada'
