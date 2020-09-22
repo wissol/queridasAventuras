@@ -103,7 +103,13 @@ function actualiza_html_seccion(seccion){
     actualizaHtmlSeccionMortal(secciones[seccionMuerte]);
     return;
   }
-  $( "#textoPrincipal" ).html( seccion.textoPrincipal );
+  let contenido = "";
+   if(typeof(seccion.titulo)!=="undefined"){
+     contenido += "<h2>" + seccion.titulo + "</h2>" + seccion.textoPrincipal;
+   } else {
+     contenido += seccion.textoPrincipal;
+   }
+   $( "#textoPrincipal" ).html( contenido );
   let htmlopciones = "";
   if(seccion.opciones.length === 0){
     htmlopciones = EL_FIN;

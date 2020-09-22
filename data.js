@@ -5,9 +5,9 @@ secciones.length = 0;
 
 secciones.inicioAventura = {};
 secciones.length++;
+secciones.inicioAventura.titulo = '¿Dónde estás?';
 secciones.inicioAventura.textoPrincipal = '\
-  <h2>¿Dónde estás?</h2>\
-  <p >Malas noticias: te has perdido. Aunque, por lo menos, por una buena razón.\
+  <p>Malas noticias: te has perdido. Aunque, por lo menos, por una buena razón.\
   Todo el mundo sabe que los <em title="Un bello animal con pelo en el torso y plumas en las alas y que parece exactamente la mezcla de un gato y un búho. Aunque dicen que no hay dos iguales.">gatobúhos son mágicos.</em></p>\
   <p>Y claro, cuando viste uno en el patio del\
   orfanato tuviste que seguirle hasta que se te escapó en lo más profundo del <em title="Tiene forma de luna llena,y siempre te han advertido de que no vayas de noche, porque hay bandidos. ¿Te lo crees?">Bosque de la Luna Grande.</em></p>\
@@ -26,7 +26,7 @@ secciones.inicioAventura.efectos = [];
 secciones.hablaFantasmaAzul = {};
 secciones.length++;
 secciones.hablaFantasmaAzul.textoPrincipal = '<h2>Los fantasmas azules</h2>\
-<p >Te acercas despacio para no asustar a los fantasmas. <q>Hola, no sé dónde estoy, ¿me pueden ayudar?</q> les dices, pero no te hacen caso. Siguen con su trabajo como si no estuvieras allí. Hasta vuelan atravesando tu cuerpo. Menuda falta de educación. Ahora mismo lo único que les preocupa es limpiar la estatua de una <em title="Es Zrudil, la Gran Maga del Norte, que murió hace 250 años. Su pasatiempo favorito era construir palacios mágicos. ¡Vaya!">señora con el pelo como un champiñón</em>, que parece escribir un libro con su dedo. Muy raro, pero no parece de mucha ayuda.</p><p>Mejor será que intentes otra cosa.</p>';
+<p>Te acercas despacio para no asustar a los fantasmas. <q>Hola, no sé dónde estoy, ¿me pueden ayudar?</q> les dices, pero no te hacen caso. Siguen con su trabajo como si no estuvieras allí. Hasta vuelan atravesando tu cuerpo. Menuda falta de educación. Ahora mismo lo único que les preocupa es limpiar la estatua de una <em title="Es Zrudil, la Gran Maga del Norte, que murió hace 250 años. Su pasatiempo favorito era construir palacios mágicos. ¡Vaya!">señora con el pelo como un champiñón</em>, que parece escribir un libro con su dedo. Muy raro, pero no parece de mucha ayuda.</p><p>Mejor será que intentes otra cosa.</p>';
 secciones.hablaFantasmaAzul.opciones = [
   ["puertaRaro", "Vas a la puerta del edificio raro"],
   ["volverCasa", "Te alejas para volver a casa"]
@@ -39,28 +39,28 @@ secciones.puertaRaro = {};
 secciones.length++;
 secciones.puertaRaro.textoPrincipal = '\
 <h2>Deberías tener miedo</h2>\
-<p >Una puerta triangular de madera de roble, más vieja que un dragón. Tiene grabada las ilustraciones de una historia, &mdash;modo irónico&mdash; muy bonita. Brujos y brujas volaron desde las nubes, pillaron siete niñas y cuatro niños, dos de ellos humanos. Luego los llevaron a un bosque y los metieron en vasos gigantes. Y estaban muy felices, los brujos y las brujas, digo.</p><p>Por lo demás la puerta es muy sencilla. No tiene aldaba ni manilla, pero sí <em title="Una inscripción pone: <q>dame de comer</q>">una cerradura</em> con forma de <em title="¿Qué comerá una serpiente típica?">cabeza de una serpiente.</em></p>';
+<p>Una puerta triangular de madera de roble, más vieja que un dragón. Tiene grabada las ilustraciones de una historia, &mdash;modo irónico&mdash; muy bonita. Brujos y brujas volaron desde las nubes, pillaron siete niñas y cuatro niños, dos de ellos humanos. Luego los llevaron a un bosque y los metieron en vasos gigantes. Y estaban muy felices, los brujos y las brujas, digo.</p><p>Por lo demás la puerta es muy sencilla. No tiene aldaba ni manilla, pero sí <em title="Una inscripción pone: <q>dame de comer</q>">una cerradura</em> con forma de <em title="¿Qué comerá una serpiente típica?">cabeza de una serpiente.</em></p>';
 secciones.puertaRaro.opciones = [
-  ["buscasRaton", "Buscas un ratón para meterlo dentro"],
+  ["buscasRaton", "Buscas un ratón para meterlo dentro de la boca de la serpiente"],
   ["ponesPan", "Metes un trocito de pan en la puerta"]
 ];
 secciones.puertaRaro.test = [];
 
 secciones.ponesPan = {};
 secciones.length++;
-secciones.ponesPan.textoPrincipal = "<h2>¡Te ha escupido el pan!</h2><p>La puerta escupe el pan con fuerza dándote en todo el ojo. ¡Eso ha dolido!";
+secciones.ponesPan.titulo = '¡Te ha escupido el pan!';
+secciones.ponesPan.textoPrincipal = "<p>La puerta escupe el pan con fuerza dándote en todo el ojo. ¡Eso ha dolido!";
 secciones.ponesPan.opciones = [
-  ["buscasRaton", "Buscas un ratón para meterlo dentro"],
+  ["buscasRaton", "Buscas un ratón para meterlo dentro de la boca de la serpiente"],
   ["ponesPan", "Metes otro trocito de pan en la puerta"]
 ];
 secciones.ponesPan.test = [];
 secciones.ponesPan.efectos = ["magullado"];
 
-
-
 secciones.buscasRaton = {};
 secciones.length++;
-secciones.buscasRaton.textoPrincipal = '<h2>Entras</h2><p >No es demasiado fácil atrapar a un ratón, especialmente si es muy pequeño, pero tu lo has conseguido. Hasta te ha parecido que, después de tu <em title="O sea el intento número 300. Es una exageración, claro. Vale, ya paro de tratarte como un niño pequeño.">tricentésimo intento</em>, el ratón se ha dejado atrapar. Las buenas noticias para él son que no se te ha ocurrido comértelo sino meterlo dentro de la cabeza de serpiente de latón de la puerta.</p> <p>Y es interesante, porque nada más desaparecer en el agujero la puerta se abre; tu primera victoria.</p>';
+secciones.buscasRaton.titulo = 'Entras';
+secciones.buscasRaton.textoPrincipal = '<p>No es demasiado fácil atrapar a un ratón, especialmente si es muy pequeño, pero tu lo has conseguido. Hasta te ha parecido que, después de tu <em title="O sea el intento número 300. Es una exageración, claro. Vale, ya paro de tratarte como un niño pequeño.">tricentésimo intento</em>, el ratón se ha dejado atrapar. Las buenas noticias para él son que no se te ha ocurrido comértelo sino meterlo dentro de la cabeza de serpiente de latón de la puerta.</p> <p>Y es interesante, porque nada más desaparecer en el agujero la puerta se abre; tu primera victoria.</p>';
 secciones.buscasRaton.opciones = [
   ["entrasEdificio", "Entra al edifico"]
 ];
@@ -69,8 +69,8 @@ secciones.buscasRaton.efectos = [];
 
 secciones.dificilRaton = {};
 secciones.length++;
-secciones.dificilRaton.textoPrincipal = '<h2>Consigues entrar al final</h2>\
-<p >No es nada fácil atrapar a un ratoncito desvalido. Lo sabes perfectamente porque te ha llevado tres horas y un codo sangrante conseguirlo. Y eso probablemente porque el pobre ratón pensó que eras tan torpe que se confió demasiado. Bueno, fuera por lo que fuera al final triunfaste.</p><p>Las buenas noticias para el animalillo son que no se te ha ocurrido comértelo sino meterlo dentro de la cabeza de serpiente de latón de la puerta.</p> <p>Y es interesante, porque nada más desaparecer en el agujero la puerta se abre; tu primera victoria.</p>';
+secciones.dificilRaton.titulo = 'Consigues entrar al final';
+secciones.dificilRaton.textoPrincipal = '<p>No es nada fácil atrapar a un ratoncito desvalido. Lo sabes perfectamente porque te ha llevado tres horas y un codo sangrante conseguirlo. Y eso probablemente porque el pobre ratón pensó que eras tan torpe que se confió demasiado. Bueno, fuera por lo que fuera al final triunfaste.</p><p>Las buenas noticias para el animalillo son que no se te ha ocurrido comértelo sino meterlo dentro de la cabeza de serpiente de latón de la puerta.</p> <p>Y es interesante, porque nada más desaparecer en el agujero la puerta se abre; tu primera victoria.</p>';
 secciones.dificilRaton.opciones = [
    ["entrasEdificio", "Entra al edifico"],
 ];
@@ -82,7 +82,7 @@ secciones.length++;
 secciones.entrasEdificio.textoPrincipal = '\
 <figure><img src="img/fibo.jpg"></figure>\
 <h2>En el edificio raro</h2>\
-<p >Una vez dentro del edificio la entrada te sorprende. Es una habitación cuadrada, sin ventanas ni puertas que lleven a otra habitación. Va dividida en dos partes: la más cercana a ti, tiene el suelo de losetas cuadradas que forman una especie de ajedrezado. En cada casilla hay un número de candelabros y <em title="Las piedras de luz son cristales naturales que emiten naturalmente una luz pálida de diversos colores">piedras de luz</em> doradas. En la otra zona, junto a la pared, se llergue la estatua de una persona que lee un libro de piedra.</p><p>Te acercas a la estatua, esquivando los candelabros y las piedras de luz que hay sobre su alfombra. En el libro que sostiene la estatua está escrito: <q>Cuatro candelabros de nueve luces: algo falta, mucho sobra</q>. Otra cosa te interesa: junto a la estatua, escondida de forma que casi no se ve, hay una palanca. Te preguntas qué pasaría si la empleas ahora.</p>';
+<p>Una vez dentro del edificio la entrada te sorprende. Es una habitación cuadrada, sin ventanas ni puertas que lleven a otra habitación. Va dividida en dos partes: la más cercana a ti, tiene el suelo de losetas cuadradas que forman una especie de ajedrezado. En cada casilla hay un número de candelabros y <em title="Las piedras de luz son cristales naturales que emiten naturalmente una luz pálida de diversos colores">piedras de luz</em> doradas. En la otra zona, junto a la pared, se llergue la estatua de una persona que lee un libro de piedra.</p><p>Te acercas a la estatua, esquivando los candelabros y las piedras de luz que hay sobre su alfombra. En el libro que sostiene la estatua está escrito: <q>Cuatro candelabros de nueve luces: algo falta, mucho sobra</q>. Otra cosa te interesa: junto a la estatua, escondida de forma que casi no se ve, hay una palanca. Te preguntas qué pasaría si la empleas ahora.</p>';
 secciones.entrasEdificio.opciones = [
   ["usaPalanca", "Bajas la palanca"],
   ["quitaDos", "Quitas dos candelabros grandes y pones tres piedras de luz"],
@@ -94,7 +94,7 @@ secciones.usaPalanca = {};
 secciones.length++;
 secciones.usaPalanca.textoPrincipal = '\
 <h2>El laboratorio mágico</h2>\
-<p >Pasa esto: Estás en una jaula y un señor gigante te habla: <q>Bienvenido a nuestro laboratorio mágico, querido ratoncito nuevo. Si puedes entender lo que digo, mueve la patita, por favor.</q></p> <p>Te cuesta un poco comprender lo que acaba de pasar. La palanca ha debido de activar alguna trampa mágica y has viajado a una burbuja en el fondo del mar. Una burbuja creada por dos magos y dos magas, los cuatro igual de locos, si nos atenemos a lo que se dedican: transportar niños mágicamente al fondo del mar para probar nuevos conjuros con ellos.</p>\
+<p>Pasa esto: Estás en una jaula y un señor gigante te habla: <q>Bienvenido a nuestro laboratorio mágico, querido ratoncito nuevo. Si puedes entender lo que digo, mueve la patita, por favor.</q></p> <p>Te cuesta un poco comprender lo que acaba de pasar. La palanca ha debido de activar alguna trampa mágica y has viajado a una burbuja en el fondo del mar. Una burbuja creada por dos magos y dos magas, los cuatro igual de locos, si nos atenemos a lo que se dedican: transportar niños mágicamente al fondo del mar para probar nuevos conjuros con ellos.</p>\
 <p><q>No tengas miedo, es posible que seamos unos magos un poco, no sé, delicuentes. Pero no unos asesinos: no te vamos a matar... bueno siempre que no la fastidiemos de verdad con ningún conjuro, pero no pasa casi nunca. Tú no te muevas por si acaso... fuerpino, fuerpino, ajrumbayá....</q></p> <p>Así comienza una parte de tu vida como conejillo de indias mágico. Espero que alguna vez consigas escapar.</p>';
 secciones.usaPalanca.opciones = [];
 secciones.usaPalanca.test = []; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
@@ -102,7 +102,7 @@ secciones.usaPalanca.test = []; // habilidad, target, seccion si falla, si acier
 secciones.quitaDos = {};
 secciones.length++;
 secciones.quitaDos.textoPrincipal = '\
-<p >Quitas dos candelabros y pones tres piedras de luz. Ahora tienes dos candelabros grandes y tres piedras de luz. Un total de 21 luces en la casilla. Pero no pasa nada, hm...<p>'
+<p>Quitas dos candelabros y pones tres piedras de luz. Ahora tienes dos candelabros grandes y tres piedras de luz. Un total de 21 luces en la casilla. Pero no pasa nada, hm...<p>'
 ;
 secciones.quitaDos.opciones = [
   ["usaPalanca2", "¿Bajas la palanca ahora?"],
@@ -112,8 +112,8 @@ secciones.quitaDos.test = []; // habilidad, target, seccion si falla, si acierta
 
 secciones.usaPalanca2 = {};
 secciones.length++;
-secciones.usaPalanca2.textoPrincipal = '<h2>Se abre una pequeña puerta</h2>\
-<p >Se abre un túnel de medio metro de diámetro. Es estrecho pero puedes pasar arrastrándote. No te gusta nada meterte dentro. Pero, ¿qué otra cosa puedes hacer? Ya decidiste no abandonar la aventura y tras haber superado la prueba anterior no te vas a rendir ahora. ¡A pesar de que esto esté lleno de bichos!</p>\
+secciones.usaPalanca2.titulo = 'Se abre una pequeña puerta';
+secciones.usaPalanca2.textoPrincipal = '<p>Se abre un túnel de medio metro de diámetro. Es estrecho pero puedes pasar arrastrándote. No te gusta nada meterte dentro. Pero, ¿qué otra cosa puedes hacer? Ya decidiste no abandonar la aventura y tras haber superado la prueba anterior no te vas a rendir ahora. ¡A pesar de que esto esté lleno de bichos!</p>\
 <p>Pero lo peor viene cuando el túnel queda en la oscuridad más completa y no tienes ninguna forma de iluminarte. El miedo te pone la piel de gallina y tienes que darte valor a cada paso que das. <q>Todo va a salir bien</q> y esas cosas. Luego te topas con dos luces, a derecha y a izquierda. ¿Qué hacer? Por el de la derecha se escucha absolutamente nada, por el de la izquierda un zumbido raro y voces, pero no entiendes nada de lo que dicen.';
 secciones.usaPalanca2.opciones = [
   ["tunelIzq", "¿A la izquierda?"],
@@ -123,9 +123,8 @@ secciones.usaPalanca2.test = [];
 
 secciones.tunelIzq = {};
 secciones.length++;
-secciones.tunelIzq.textoPrincipal = '<h2>La máquina de hacer magia</h2>\
-<p >El túnel termina súbitamente en una abertura en una pared altísima. Te encuentras a seis metros del suelo, demasiado para descolgarte con seguridad aunque podrías intentarlo supongo. Porque, ¿qué otra cosa podrías hacer?</p>\
-<p>Aquí debajo hay una extraña máquina, como una caldera gigante, solo que unos fantasmas azules la están alimentando con piedras de luz naranja y emite como unas cabezas fantasmales que vuelan por todas partes, hablan, discuten entre ellas y luego desaparecen.</p>'; //encuentra un mapa pero le falta un cacho o algo y realmente lleva a un sitio rápido pero peligroso
+secciones.tunelIzq.titulo = 'La máquina de hacer magia';
+secciones.tunelIzq.textoPrincipal = '<p>El túnel termina súbitamente en una abertura en una pared altísima. Te encuentras a seis metros del suelo, demasiado para descolgarte con seguridad aunque podrías intentarlo supongo. Porque, ¿qué otra cosa podrías hacer?</p><p>Aquí debajo hay una extraña máquina, como una caldera gigante, solo que unos fantasmas azules la están alimentando con piedras de luz naranja y emite como unas cabezas fantasmales que vuelan por todas partes, hablan, discuten entre ellas y luego desaparecen.</p>'; //encuentra un mapa pero le falta un cacho o algo y realmente lleva a un sitio rápido pero peligroso
 secciones.tunelIzq.opciones = [
   ["teDescuelgas", "Te descuelgas"],
   ["tunelDch", "Vas al otro túnel"],
@@ -287,7 +286,7 @@ secciones.aPorEl.efectos = [];
 
 secciones.tunelDch = {};
 secciones.length++;
-secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> <p >Casi te pilló la araña cazadora cuando entraste deprisa en el túnel. Menos mal que la viste justo antes de que te lanzara su tela pegajosa. Un segundo más tarde y habrías sido como una momia de mosca.</p> <p>Pero eso es lo que <em title="Si tu personaje hubiera fallado la tirada de percepción">pudo haber pasado</em>, aunque lograste escapar. Has corrido hasta el fondo del túnel, y no ves dónde seguir huyendo.</p><p>Y en el fondo de esta cámara, hay una telaraña, grande como nunca has visto, y en el centro una momia de seda que, por su forma, parece alojar una <em title="Como un niño, por ejemplo.">persona pequeña</em>.';
+secciones.tunelDch.textoPrincipal = '<h2>La araña cazadora</h2> <p>Casi te pilló la araña cazadora cuando entraste deprisa en el túnel. Menos mal que la viste justo antes de que te lanzara su tela pegajosa. Un segundo más tarde y habrías sido como una momia de mosca.</p> <p>Pero eso es lo que <em title="Si tu personaje hubiera fallado la tirada de percepción">pudo haber pasado</em>, aunque lograste escapar. Has corrido hasta el fondo del túnel, y no ves dónde seguir huyendo.</p><p>Y en el fondo de esta cámara, hay una telaraña, grande como nunca has visto, y en el centro una momia de seda que, por su forma, parece alojar una <em title="Como un niño, por ejemplo.">persona pequeña</em>.';
 secciones.tunelDch.opciones = [
   ["intentasRescate", "Intentas rescatar a la víctima"],
   ["tunelIzq", "Vas al otro túnel"]
@@ -299,7 +298,7 @@ secciones.intentasRescate = {};
 secciones.length++;
 secciones.intentasRescate.textoPrincipal = '\
 <h2>Intentas el rescate</h2>\
-<p >Una acción noble y aventurera, desde luego. La pregunta principal es, ¿cómo lo vas a hacer? Tienes la posibilidad de hacerlo a lo bruto, claro, o sea buscas los anclajes de la telaraña y los arrancas. Luego ya solo tienes que ir a porla persona que está dentro. Otra posibilidad es tratar de buscar una piedra afilada y usarla para cortar. Por último, pero solo si te atreves... verás hay una cuerda de telaraña colgando del techo, si saltas te puedes agarrar a ella y columpiarte hasta donde está la víctima. No sé, en una novela de aventuras seguro que sale bien.';
+<p>Una acción noble y aventurera, desde luego. La pregunta principal es, ¿cómo lo vas a hacer? Tienes la posibilidad de hacerlo a lo bruto, claro, o sea buscas los anclajes de la telaraña y los arrancas. Luego ya solo tienes que ir a porla persona que está dentro. Otra posibilidad es tratar de buscar una piedra afilada y usarla para cortar. Por último, pero solo si te atreves... verás hay una cuerda de telaraña colgando del techo, si saltas te puedes agarrar a ella y columpiarte hasta donde está la víctima. No sé, en una novela de aventuras seguro que sale bien.';
 secciones.intentasRescate.opciones = [
   ["piedraAfilada", "Buscas una piedra afilada"],
   ["aLoBruto", "Arrancas la teleraña a lo bruto"],
@@ -310,7 +309,7 @@ secciones.intentasRescate.efectos = [];
 
 secciones.aLoBruto = {};
 secciones.length++;
-secciones.aLoBruto.textoPrincipal = '<h2>¡Era una emboscada!</h2><p >Pero ahora viene una malvada araña contra tí y te atrapa con su tela</p>';
+secciones.aLoBruto.textoPrincipal = '<h2>¡Era una emboscada!</h2><p>Pero ahora viene una malvada araña contra tí y te atrapa con su tela</p>';
 secciones.aLoBruto.opciones = [];
 secciones.aLoBruto.test = [];
 secciones.aLoBruto.efectos = [];
@@ -376,7 +375,7 @@ secciones.quitaTres.test = []; // habilidad, target, seccion si falla, si aciert
 secciones.usaPalanca3 = {};
 secciones.length++;
 secciones.usaPalanca3.textoPrincipal = '<h2>De vuelta al orfanato</h2>\
-<p >Una nube de humo, un aroma a fósforo y te desmayas. Cuando recuperas la consciencia apareces en el orfanato. Concretamente sobre el tejado, y en ropa interior, a las tres de la madrugada. Vas a tener mucho que explicar</p><p>Suerte.</p>';
+<p>Una nube de humo, un aroma a fósforo y te desmayas. Cuando recuperas la consciencia apareces en el orfanato. Concretamente sobre el tejado, y en ropa interior, a las tres de la madrugada. Vas a tener mucho que explicar</p><p>Suerte.</p>';
 secciones.usaPalanca3.opciones = [];
 secciones.usaPalanca3.test = [];
 
@@ -398,14 +397,14 @@ secciones.sigueCaminando = {};
 secciones.length++;
 secciones.sigueCaminando.textoPrincipal = '\
 <h2>Te encuentran, ¡bien!</h2>\
-<p >La noche fue horrible. Muchas veces creías que te seguían y te has pasado la mitad del tiempo huyendo de ruidos raros entre los matorrales. Seguro que no eran sino animales que se asustaban al verte pasar. Pero a ver quién se arriesga. Te has llevando un par de tortazos, hasta una vez tropezaste con una raíz y rodaste por el suelo. Pero todo eso ha pasado ya, porque del pueblo mandaron una patrulla en tu búsqueda, y a primera hora de la mañana te encontraron, sucio y magullado, pero vivo. Hoy desayunas con el alcalde y por la tarde, bueno, seguro que tienes que dar muchas explicaciones a la rectora del orfanato. ¡Suerte! </p>';
+<p>La noche fue horrible. Muchas veces creías que te seguían y te has pasado la mitad del tiempo huyendo de ruidos raros entre los matorrales. Seguro que no eran sino animales que se asustaban al verte pasar. Pero a ver quién se arriesga. Te has llevando un par de tortazos, hasta una vez tropezaste con una raíz y rodaste por el suelo. Pero todo eso ha pasado ya, porque del pueblo mandaron una patrulla en tu búsqueda, y a primera hora de la mañana te encontraron, sucio y magullado, pero vivo. Hoy desayunas con el alcalde y por la tarde, bueno, seguro que tienes que dar muchas explicaciones a la rectora del orfanato. ¡Suerte! </p>';
 secciones.sigueCaminando.opciones = [];
 secciones.sigueCaminando.test = ["per",0,"pilladoKarppis"]; // habilidad, target, seccion si falla, si acierta se queda en donde estaba
 
 secciones.pilladoKarppis = {};
 secciones.length++;
 secciones.pilladoKarppis.textoPrincipal = '<h2>Te han pillado</h2>\
-<p >Hay un torre de piedra en medio del bosque, apenas más alta que los árboles que la circundan. Allí vive una tribu de seres como los humanos, pero algo más bajitos, de cuatro dedos en manos y pies, y con la piel en varios tonos marrones, a manera de camuflaje. Se les suele llamar <em title="Se pronuncia karp-pis, marcando las dos <q>p</q>">karppis.</em></p>\
+<p>Hay un torre de piedra en medio del bosque, apenas más alta que los árboles que la circundan. Allí vive una tribu de seres como los humanos, pero algo más bajitos, de cuatro dedos en manos y pies, y con la piel en varios tonos marrones, a manera de camuflaje. Se les suele llamar <em title="Se pronuncia karp-pis, marcando las dos <q>p</q>">karppis.</em></p>\
 <p>Desde esa torre salen a cazar conejos y ciervos. Pero si detectan algún viajero solitario, sobre todo si es un niño perdido, organizan una emboscada. Esperan a la noche, porque conocen tan bien la zona que parece que vieran en la oscuridad. En realidad te siguieron con sus grandes orejas y sus finas narices. Se quedaron quietos agazapados hasta estar seguros que no tuvieras una oportunidad ni de defenderte ni escapar. Ahora te llevan, vivo y sano, pero prisionero a su torre. ¿Tu futuro? Hay comerciantes que compran niños para llevarlos a países extranjeros, donde venderlos como esclavos en el palacio del algún reyezuelo. Aunque, ¿quién puede decir que nunca conseguirás escapar?</p>';
 secciones.pilladoKarppis.opciones = [];
 secciones.pilladoKarppis.test = [];
@@ -421,7 +420,7 @@ secciones.hacerRefugio.test = ["des",3,"pasasFrio"];
 secciones.pasasFrio = {};
 secciones.length++;
 secciones.pasasFrio.textoPrincipal = '<h2>Una noche horrible</h2>\
-<p >Es más fácil en los cuentos. En la vida real hacerte un refugio con lo que ofrece el bosque lleva mucho tiempo y esfuerzo. Sobre todo cuando solo eres un niño con miedo. Encima se te hace de noche y es imposible ver nada. Mucho menos hacer un fuego. Como último remedio te refugias bajo un gran tronco caído y medio podrido. El frío es horrible y no te duermes del miedo que te da despertar. Pero a la mañana siguiente, a pesar del hambre y el cansancio, vives. Y lo que es mejor, pronto escuchas las voces de la patrulla ciudadana que ha venido a buscarte. Hoy desayunas con el alcalde, aunque por la tarde tendrás mucho que explicar. ¡Suerte!';
+<p>Es más fácil en los cuentos. En la vida real hacerte un refugio con lo que ofrece el bosque lleva mucho tiempo y esfuerzo. Sobre todo cuando solo eres un niño con miedo. Encima se te hace de noche y es imposible ver nada. Mucho menos hacer un fuego. Como último remedio te refugias bajo un gran tronco caído y medio podrido. El frío es horrible y no te duermes del miedo que te da despertar. Pero a la mañana siguiente, a pesar del hambre y el cansancio, vives. Y lo que es mejor, pronto escuchas las voces de la patrulla ciudadana que ha venido a buscarte. Hoy desayunas con el alcalde, aunque por la tarde tendrás mucho que explicar. ¡Suerte!';
 secciones.pasasFrio.opciones = [];
 secciones.pasasFrio.test = [];
 secciones.pasasFrio.efectos = ["herido"];
@@ -436,7 +435,8 @@ secciones.muere1.efectos = [];
 
 secciones.muereGoryAleluya = {};
 secciones.length++;
-secciones.muereGoryAleluya.textoPrincipal = "<h2>Una caída brutal</h2><p>Las manos te resbalaron al agarrar la cuerda de telaraña que resultó ser más sedosa de lo que esperaban. Podrías haberte matado de la caída, pero la red de la araña es blandita. Lástima que también sea pegajosa y no te puedas escapar.</p><p>Esto pinta muy mal</p>";
+secciones.muereGoryAleluya.titulo = 'Una caída brutal';
+secciones.muereGoryAleluya.textoPrincipal = '<p>Las manos <em title="fallaste la tirada de FUErza">te resbalaron</em> al agarrar la cuerda de telaraña que resultó ser más sedosa de lo que esperaban. Podrías haberte matado de la caída, pero la red de la araña es blandita. Lástima que también sea pegajosa y no te puedas escapar.</p><p>Esto pinta muy mal</p>';
 secciones.muereGoryAleluya.opciones = [];
 secciones.muereGoryAleluya.test = [];
 secciones.muereGoryAleluya.efectos = [];
