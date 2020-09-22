@@ -356,7 +356,8 @@ secciones.cortarTelaraña.efectos = [];
 
 secciones.saltoAventura = {};
 secciones.length++;
-secciones.saltoAventura.textoPrincipal = 'Consigues saltar y todo eso, pero al llegar a la parte central de la telaraña te quedas pegado a ella... se entera que la víctima no era n niño sino un kobold... creo que te vas con la araña';
+secciones.saltoAventura.titulo = 'Una idea desafortunada bien ejecutada'
+secciones.saltoAventura.textoPrincipal = '<p>Consigues saltar y todo eso, pero al llegar a la parte central de la telaraña te quedas pegado a ella, sin poder escapar... creo que te vas con la araña</p>';
 secciones.saltoAventura.opciones = [];
 secciones.saltoAventura.test = ["fue",1,"muereGoryAleluya"];
 secciones.saltoAventura.efectos = [];
@@ -451,7 +452,7 @@ secciones.muereCaidaDescuelgue.efectos = [];
 
 secciones.muere14 = {};
 secciones.length++;
-secciones.muerte14.titulo = 'Se acabó tu aventura';
+secciones.muere14.titulo = 'Se acabó tu aventura';
 secciones.muere14.textoPrincipal = '<p>Estás hecho polvo y no te puedes levantar. Pasará mucho tiempo antes de que te recuperes y tu única esperanza de sobrevivir es que venga alguien a socorrerte.</p>';
 secciones.muere14.opciones = [];
 secciones.muere14.test = [];
