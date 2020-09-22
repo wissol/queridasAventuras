@@ -436,13 +436,14 @@ secciones.muere1.efectos = [];
 secciones.muereGoryAleluya = {};
 secciones.length++;
 secciones.muereGoryAleluya.titulo = 'Una caída brutal';
-secciones.muereGoryAleluya.textoPrincipal = '<p>Las manos <em title="fallaste la tirada de FUErza">te resbalaron</em> al agarrar la cuerda de telaraña que resultó ser más sedosa de lo que esperaban. Podrías haberte matado de la caída, pero la red de la araña es blandita. Lástima que también sea pegajosa y no te puedas escapar.</p><p>Esto pinta muy mal</p>';
+secciones.muereGoryAleluya.textoPrincipal = '<p>Las manos <em title="Fallaste la tirada de FUErza">te resbalaron</em> al agarrar la cuerda de telaraña que resultó ser más sedosa de lo que esperaban. Podrías haberte matado de la caída, pero la red de la araña es blandita. Lástima que también sea pegajosa y no te puedas escapar.</p><p>Esto pinta muy mal</p>';
 secciones.muereGoryAleluya.opciones = [];
 secciones.muereGoryAleluya.test = [];
 secciones.muereGoryAleluya.efectos = [];
 
 secciones.muereCaidaDescuelgue = {};
 secciones.length++;
+secciones.muereCaidaDescuelgue.titulo = 'Un extraño destino';
 secciones.muereCaidaDescuelgue.textoPrincipal = 'Te has roto una mano y un pie y no te puedes levantar. Los fantasmas azules no te prestan atención, llores, grites, insultes o supliques. Una hora después una maga viene y te salva... para mantenerte encerrado, usado como batería mágica';
 secciones.muereCaidaDescuelgue.opciones = [];
 secciones.muereCaidaDescuelgue.test = [];
@@ -450,7 +451,8 @@ secciones.muereCaidaDescuelgue.efectos = [];
 
 secciones.muere14 = {};
 secciones.length++;
-secciones.muere14.textoPrincipal = '<h2>Se acabó tu aventura</h2><p>Estás hecho polvo y no te puedes levantar. Pasará mucho tiempo antes de que te recuperes y tu única esperanza de sobrevivir es que venga alguien a socorrerte.</p>';
+secciones.muerte14.titulo = 'Se acabó tu aventura';
+secciones.muere14.textoPrincipal = '<p>Estás hecho polvo y no te puedes levantar. Pasará mucho tiempo antes de que te recuperes y tu única esperanza de sobrevivir es que venga alguien a socorrerte.</p>';
 secciones.muere14.opciones = [];
 secciones.muere14.test = [];
 secciones.muere14.efectos = [];
