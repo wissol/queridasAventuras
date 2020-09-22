@@ -346,7 +346,8 @@ secciones.noEncuentrasPiedra.efectos = [];
 
 secciones.cortarTelaraña= {};
 secciones.length++;
-secciones.cortarTelaraña.textoPrincipal = 'Cortas la telaraña, el crío que resulta ser un goblin se cae y una araña va a por tí...';
+secciones.cortarTelaraña.titulo = '<h2>¡Sorpresa!</h2>';
+secciones.cortarTelaraña.textoPrincipal = '<p>Cortas los extremos de la telaraña con rapidez hasta que se derrumba. Corres a salvar a la criatura atrapada, cortando las fibras de la red, hasta que descubres que se trata de un muñeco. La araña te ha engañado y ahora va a por tí!</p>';
 secciones.cortarTelaraña.opciones = [
    ["huirAranna", "Sales corriendo, buscando una salida"],
    ["lucharAranna", "Tampoco es tan grande y tu piedra de obsidiana corta tan bien como un cuchillo"]
