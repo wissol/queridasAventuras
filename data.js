@@ -355,7 +355,27 @@ secciones.cortarTelaraña.opciones = [
 secciones.cortarTelaraña.test = [];
 secciones.cortarTelaraña.efectos = [];
 
-secciones.huirAranna.error = "";
+secciones.huirAranna = {};
+secciones.length++;
+secciones.huirAranna.titulo = '¡Por los pelos!';
+secciones.huirAranna.textoPrincipal = '<p>Conseguiste esquivar a la araña y dejarla atrás. Fue <em title="Pasaste la tirada de fuerza">difícil</em> porque no había más salida que la entrada de dónde viniste. Eso significa que tienes que explorar el túnel que antes desechaste.</p>';
+secciones.huirAranna.opciones = [
+  ["tunelIzq", "Ve entonces al túnel de la izquierda"]
+];
+secciones.huirAranna.test = ["fue", 0, "pilladoAranna2"];
+secciones.huirAranna.efectos = [];
+
+secciones.pilladoAranna2 = {};
+secciones.length++;
+secciones.pilladoAranna2.titulo = 'No hay esperanza';
+secciones.pilladoAranna2.textoPrincipal = '<p>Intentaste huir, pero la araña fue más <em title="Fallaste la tirada de fuerza">rápida</em>. En parte porque no había más salida que la entrada. Pero eso no importa ya, porque sus mandíbulas se claraon en tu espalda y su veneno también...</p>';
+secciones.pilladoAranna2.opciones = [
+  ["tunelIzq", "Ve entonces al túnel de la izquierda"]
+];
+secciones.pilladoAranna2.test = [];
+secciones.pilladoAranna2.efectos = [];
+
+
 secciones.lucharAranna.error = "";
 
 secciones.saltoAventura = {};
@@ -468,9 +488,9 @@ secciones._404.opciones = [];
 secciones._404.test = [];
 secciones._404.efectos = [];
 
-//secciones.x = {};
+//secciones.ñ = {};
 //secciones.length++;
-//secciones.x.textoPrincipal = '';
-//secciones.x.opciones = [];
-//secciones.x.test = [];
-//secciones.x.efectos = []; 
+//secciones.ñ.textoPrincipal = '';
+//secciones.ñ.opciones = [];
+//secciones.ñ.test = [];
+//secciones.ñ.efectos = []; 
