@@ -369,14 +369,20 @@ secciones.pilladoAranna2 = {};
 secciones.length++;
 secciones.pilladoAranna2.titulo = 'No hay esperanza';
 secciones.pilladoAranna2.textoPrincipal = '<p>Intentaste huir, pero la araña fue más <em title="Fallaste la tirada de fuerza">rápida</em>. En parte porque no había más salida que la entrada. Pero eso no importa ya, porque sus mandíbulas se claraon en tu espalda y su veneno también...</p>';
-secciones.pilladoAranna2.opciones = [
-  ["tunelIzq", "Ve entonces al túnel de la izquierda"]
-];
+secciones.pilladoAranna2.opciones = [];
 secciones.pilladoAranna2.test = [];
 secciones.pilladoAranna2.efectos = [];
 
-
-secciones.lucharAranna.error = "";
+secciones.lucharAranna = {};
+secciones.length++;
+secciones.lucharAranna.titulo = 'Victoria';
+secciones.lucharAranna.textoPrincipal = '<p>Deberías ser ahora pienso para arañas, pero triunfaste en la pelea y ahora, aunque algo maltrecho puedes ir al otro túnel</p>';
+secciones.lucharAranna.opciones = [
+  ["tunelIzq", "Ve entonces al túnel de la izquierda"]
+];
+secciones.lucharAranna.test = [];
+secciones.lucharAranna.efectos = ["grave"];
+//seccionSiMuere no pongo para probar sección de muerte genérica (muere14)
 
 secciones.saltoAventura = {};
 secciones.length++;
@@ -477,7 +483,7 @@ secciones.muereCaidaDescuelgue.efectos = [];
 secciones.muere14 = {};
 secciones.length++;
 secciones.muere14.titulo = 'Se acabó tu aventura';
-secciones.muere14.textoPrincipal = '<p>Estás hecho polvo y no te puedes levantar. Pasará mucho tiempo antes de que te recuperes y tu única esperanza de sobrevivir es que venga alguien a socorrerte.</p>';
+secciones.muere14.textoPrincipal = '<p>Estás inconsciente y ya no importa mucho cómo pasó, salvo por el hecho que tu corazón está a punto de dejar de latir.</p>';
 secciones.muere14.opciones = [];
 secciones.muere14.test = [];
 secciones.muere14.efectos = [];
