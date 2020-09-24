@@ -37,9 +37,8 @@ secciones.hablaFantasmaAzul.efectos = [];
 
 secciones.puertaRaro = {};
 secciones.length++;
-secciones.puertaRaro.textoPrincipal = '\
-<h2>Deberías tener miedo</h2>\
-<p>Una puerta triangular de madera de roble, más vieja que un dragón. Tiene grabada las ilustraciones de una historia, &mdash;modo irónico&mdash; muy bonita. Brujos y brujas volaron desde las nubes, pillaron siete niñas y cuatro niños, dos de ellos humanos. Luego los llevaron a un bosque y los metieron en vasos gigantes. Y estaban muy felices, los brujos y las brujas, digo.</p><p>Por lo demás la puerta es muy sencilla. No tiene aldaba ni manilla, pero sí <em title="Una inscripción pone: <q>dame de comer</q>">una cerradura</em> con forma de <em title="¿Qué comerá una serpiente típica?">cabeza de una serpiente.</em></p>';
+secciones.puertaRaro.title = 'Deberías tener miedo';
+secciones.puertaRaro.textoPrincipal = '<p>Una puerta triangular de madera de roble, más vieja que un dragón. Tiene grabada las ilustraciones de una historia, &mdash;modo irónico&mdash; muy bonita. Brujos y brujas volaron desde las nubes, pillaron siete niñas y cuatro niños, dos de ellos humanos. Luego los llevaron a un bosque y los metieron en vasos gigantes. Y estaban muy felices, los brujos y las brujas, digo.</p><p>Por lo demás la puerta es muy sencilla. No tiene aldaba ni manilla, pero sí <em title="Una inscripción pone: <q>dame de comer</q>">una cerradura</em> con forma de <em title="¿Qué comerá una serpiente típica?">cabeza de una serpiente.</em></p>';
 secciones.puertaRaro.opciones = [
   ["buscasRaton", "Buscas un ratón para meterlo dentro de la boca de la serpiente"],
   ["ponesPan", "Metes un trocito de pan en la puerta"]
@@ -132,6 +131,17 @@ secciones.tunelIzq.opciones = [
 ];
 secciones.tunelIzq.test = [];
 secciones.tunelIzq.efectos = [];
+
+secciones.hablaCara = {};
+secciones.length++;
+secciones.hablaCara.titulo = 'Un fantasma reciclado';
+secciones.hablaCara.textoPrincipal = '<p>La conversación con una cabeza fantasmal es tan extraña como puedes imaginarte. Para empezar el propietario original de la cabeza está un poco muerto. Su cadáver se pudre en la fosa de un pantano. De joven llegó a ser aprendiz de mago, pero se perdió por el vino. Una pena que alguien tan prometedor acabara ahogándose en el lodo al caerse bocabajo de una borrachera; pero por lo visto eso puede pasar.</p><p>Ahora bien, todo lo que puedes sacar de la conversación es que esta máquina sirve para atrapar espíritus de personas con energía mágica, para luego atraparla en amuletos, previsible para el uso de un mago o bruja. Pero aquí no aparece venir nadie y los fantasmas azules no hacen sino reciclar una y otra vez los fantasmas, esperando por un propietario que no viene nunca. Curioso.';
+secciones.hablaCara.opciones = [
+  ["teDescuelgas", "Te descuelgas"],
+  ["tunelDch", "Vas al otro túnel"],
+];
+secciones.hablaCara.test = [];
+secciones.hablaCara.efectos = []; 
 
 secciones.teDescuelgas = {};
 secciones.length++;
@@ -405,18 +415,16 @@ secciones.quitaTres.test = []; // habilidad, target, seccion si falla, si aciert
 
 secciones.usaPalanca3 = {};
 secciones.length++;
-secciones.usaPalanca3.textoPrincipal = '<h2>De vuelta al orfanato</h2>\
-<p>Una nube de humo, un aroma a fósforo y te desmayas. Cuando recuperas la consciencia apareces en el orfanato. Concretamente sobre el tejado, y en ropa interior, a las tres de la madrugada. Vas a tener mucho que explicar</p><p>Suerte.</p>';
+secciones.usaPalanca3.titulo = 'De vuelta al orfanato';
+secciones.usaPalanca3.textoPrincipal = '<p>Una nube de humo, un aroma a fósforo y te desmayas. Cuando recuperas la consciencia apareces en el orfanato. Concretamente sobre el tejado, y en ropa interior, a las tres de la madrugada. Vas a tener mucho que explicar</p><p>Suerte.</p>';
 secciones.usaPalanca3.opciones = [];
 secciones.usaPalanca3.test = [];
 
 secciones.volverCasa = {};
 secciones.length++;
-secciones.volverCasa.textoPrincipal = "\
-<h2>De noche en el bosque</h2>\
-<p class='letraCapitular'>Te alejas corriendo porque sabes que las aventuras son peligrosas. Sobre todo si tienen fantasmas. Cuando ya no puedes correr más, caminas muy despacio hasta que te recuperas y luego vuelves a correr. No sabes dónde estás, ni por dónde se vuelve a casa. Aunque tu casa sea un orfanato sigue siendo tu casa. Y da miedo no saber dónde estás.</p>\
-<p>Piensas en subirte a un árbol para comprobar si puedes encontrar la salida. Pero es casi de noche, y no sabes trepar muy bien. Sería demasiado peligroso intentarlo ahora. Si te caes o vas directo a las rocas o a las zarzas. </p>\
-";
+secciones.volverCasa.titulo = 'De noche en el bosque';
+secciones.volverCasa.textoPrincipal = '<p>Te alejas corriendo porque sabes que las aventuras son peligrosas. Sobre todo si tienen fantasmas. Cuando ya no puedes correr más, caminas muy despacio hasta que te recuperas y luego vuelves a correr. No sabes dónde estás, ni por dónde se vuelve a casa. Aunque tu casa sea un orfanato sigue siendo tu casa. Y da miedo no saber dónde estás.</p>\
+<p>Piensas en subirte a un árbol para comprobar si puedes encontrar la salida. Pero es casi de noche, y no sabes trepar muy bien. Sería demasiado peligroso intentarlo ahora. Si te caes o vas directo a las rocas o a las zarzas. </p>';
 secciones.volverCasa.opciones = [
   ["hacerRefugio", "Haces un refugio"],
   ["sigueCaminando", "Sigues Caminando"]
@@ -489,7 +497,8 @@ secciones.muere14.test = [];
 secciones.muere14.efectos = [];
 
 secciones._404 = {};
-secciones._404.textoPrincipal = "<h2>Esto es un error</h2><p>Aquí debería haber una sección, pero ha salido un bug</p>";
+secciones._404.titulo = 'Esto es un error'
+secciones._404.textoPrincipal = "<p>Aquí debería haber una sección, pero ha salido un bug de esos tan frustrantes.</p>";
 secciones._404.opciones = [];
 secciones._404.test = [];
 secciones._404.efectos = [];
