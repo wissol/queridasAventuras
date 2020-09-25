@@ -185,15 +185,22 @@ secciones.nuevoTunel.test = [
 ];
 secciones.nuevoTunel.efectos = [];
 
+secciones.teAcercasAElla.error = "";
+secciones.vuelves.error = "";
+secciones.sA.error = "";
+secciones.sB.error ="";
+secciones.sC.error ="";
+secciones.sD.error ="";
+
+
 secciones.vasTrampilla = {};
 secciones.length++;
 secciones.vasTrampilla.textoPrincipal = 'uno de los límites de la magia con la que la bruja me dio mis poderes es que solo una de mis víctimas podría vencerme si llegaba hasta aquí - ahora bien hasta ahora ninguna lo ha conseguido y todos son mis servidores en la eternidad. ¿Te rindes ya y acortas tus sufrimientos?';
 secciones.vasTrampilla.opciones = [
   ["sA" , "Luchas de forma normal"],    // hay que poner pistas antes para que forma usar
   ["sB" , "Luchas de forma rara B"],
-  ["sC" , "Luchas de forma rara c"],
-  ["sD" , "Te rindes"],
-  ["sE", "Huyes"]
+  ["sC" , "Te rindes"],
+  ["sD", "Huyes"]
 ];
 secciones.vasTrampilla.test = [];
 secciones.vasTrampilla.efectos = [];
