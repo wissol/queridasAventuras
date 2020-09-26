@@ -77,11 +77,11 @@ function generaFichaPersonaje(){
 function actualizaHtmlSeccionMortal(seccion){
    let contenido = "";
    if(typeof(seccion.titulo)!=="undefined"){
-     contenido += "<h2>" + seccion.titulo + "</h2>" + seccion.textoPrincipal;
+     contenido += "<h2>" + seccion.titulo + "</h2>" + seccion.texto;
    } else {
-     contenido += seccion.textoPrincipal;
+     contenido += seccion.texto;
    }
-   $( "#textoPrincipal" ).html( contenido );
+   $( "#texto" ).html( contenido );
    htmlopciones = EL_FIN;
    $( "#opciones" ).html( htmlopciones ) ;  
   $( "#fichaPersonaje" ).html( generaFichaPersonaje()  ) ;
@@ -105,11 +105,11 @@ function actualiza_html_seccion(seccion){
   }
   let contenido = "";
    if(typeof(seccion.titulo)!=="undefined"){
-     contenido += "<h2>" + seccion.titulo + "</h2>" + seccion.textoPrincipal;
+     contenido += "<h2>" + seccion.titulo + "</h2>" + seccion.texto;
    } else {
-     contenido += seccion.textoPrincipal;
+     contenido += seccion.texto;
    }
-   $( "#textoPrincipal" ).html( contenido );
+   $( "#texto" ).html( contenido );
   let htmlopciones = "";
   if(seccion.opciones.length === 0){
     htmlopciones = EL_FIN;
