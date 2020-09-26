@@ -195,14 +195,28 @@ secciones.teAcercasAElla.opciones = [
 secciones.teAcercasAElla.test = [];
 secciones.teAcercasAElla.efectos = [];
 
-//secciones.teAcercasAElla.error = "";
-secciones.vidaNormal.error = "";
-secciones.aprendizaje.error = "";
-//secciones.vuelves.error = "";
-//secciones.sA.error = "";
-//secciones.sB.error ="";
-//secciones.sC.error ="";
-//secciones.sD.error ="";
+
+secciones.vidaNormal = {};
+secciones.length++;
+secciones.vidaNormal.titulo = 'Vuelta a la vida normal';
+secciones.vidaNormal.textoPrincipal = 'Has sido tú quien ha eligido este final, así que no podrás quejarte. Bueno, sí, pero no te haré ni pizca de caso. En fin, lo que ha pasado es que has vuelto al orfanato en la mañana anterior a que todo esto pasara, como si hubiera sido un sueño muy raro.';
+secciones.vidaNormal.opciones = [];
+secciones.vidaNormal.test = [];
+secciones.vidaNormal.efectos = []; 
+
+secciones.aprendizaje = {};
+secciones.length++;
+secciones.aprendizaje.titulo = 'Feliz aprendizaje';
+secciones.aprendizaje.textoPrincipal = '<p>A partir de ahora vivirás con una maga y todo eso, será una existencia peculiar, sin duda, pero genial.</p>';
+secciones.aprendizaje.opciones = [];
+secciones.aprendizaje.test = [];
+secciones.aprendizaje.efectos = []; 
+
+secciones.vuelves.error = "";
+secciones.sA.error = "";
+secciones.sB.error ="";
+secciones.sC.error ="";
+secciones.sD.error ="";
 
 
 secciones.vasTrampilla = {};
