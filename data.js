@@ -176,21 +176,33 @@ secciones.buscaSalida.efectos = [];
 
 secciones.nuevoTunel = {};
 secciones.length++;
-secciones.nuevoTunel.textoPrincipal = 'el túnel se abre a una cueva con estalactitas y eso. un lago subterráneo lo cubre todo y en el centro de todo hay una señora hilando con hebras de oro y planta que va sacando de las monedas';
+secciones.nuevoTunel.textoPrincipal = 'el túnel se abre a una cueva con estalactitas y eso. un lago subterráneo lo cubre todo y en el centro de todo hay una señora hilando con hebras de oro y plata que va sacando de las monedas';
 secciones.nuevoTunel.opciones = [
-  ];
-secciones.nuevoTunel.test = [
   ["teAcercasAElla", "Te acercas a ella"],
   ["vuelves", "Vuelves por dónde has venido"]
 ];
+secciones.nuevoTunel.test = [];
 secciones.nuevoTunel.efectos = [];
 
-secciones.teAcercasAElla.error = "";
-secciones.vuelves.error = "";
-secciones.sA.error = "";
-secciones.sB.error ="";
-secciones.sC.error ="";
-secciones.sD.error ="";
+secciones.teAcercasAElla = {};
+secciones.length++;
+secciones.teAcercasAElla.titulo = 'Has demostrado valor';
+secciones.teAcercasAElla.textoPrincipal = '<p>La señora te mira y te sonríe, dejando que te acerques, pero sin abandonar su labor. <q>Has demostrado valor</q>, te dice, <q>superando todas estas pruebas. Mira que precisamente andaba yo buscando una personita para enseñarle toda mi magia, antes de que me muera, y me parece que tendrías madera para ello. Tendrías que vivir en mi torre, sin embargo. ¿Te apetece hacerlo o prefieres volver a tu vida normal?</q> ¿Qué le respondes?</p>';
+secciones.teAcercasAElla.opciones = [
+  ["vidaNormal", "Prefiero volver a mi vida normal"],
+  ["aprendizaje", "Me encantaría aprender magia. ¡Es mi sueño!"]
+  ];
+secciones.teAcercasAElla.test = [];
+secciones.teAcercasAElla.efectos = [];
+
+//secciones.teAcercasAElla.error = "";
+secciones.vidaNormal.error = "";
+secciones.aprendizaje.error = "";
+//secciones.vuelves.error = "";
+//secciones.sA.error = "";
+//secciones.sB.error ="";
+//secciones.sC.error ="";
+//secciones.sD.error ="";
 
 
 secciones.vasTrampilla = {};
